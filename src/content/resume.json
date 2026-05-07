@@ -1,0 +1,115 @@
+{
+  "name": "José João Ferreira",
+  "email": "jjasferreira@gmail.com",
+  "location": "Lisbon, Portugal",
+  "experience": [
+    {
+      "title": "Visiting Scholar",
+      "organization": "Carnegie Mellon University",
+      "type": null,
+      "logo": "cmu.svg",
+      "website": "https://www.cmu.edu",
+      "start": "Nov 2025",
+      "end": "Dec 2025",
+      "time": "2 mos",
+      "location": "Pittsburgh, Pennsylvania, United States",
+      "setting": "On-site",
+      "description": "Benchmarking two unsatisfiable core extraction methodologies for unweighted MaxSAT. Using the MSU3 algorithm and the Glucose 3 solver via PySAT, we compare the lower bound precision and core minimality of internal solver assumptions against external resolution proof processing with DRAT-trim.",
+      "color": "#C41230",
+      "skills": ["Automated Reasoning", "Constraint Optimization"]
+    },
+    {
+      "title": "Research Assistant",
+      "organization": "INESC-ID",
+      "type": null,
+      "logo": "inesc.svg",
+      "website": "https://www.inesc-id.pt",
+      "start": "Apr 2025",
+      "end": "Oct 2025",
+      "time": "7 mos",
+      "location": "Lisbon, Portugal",
+      "setting": "Hybrid",
+      "description": "Applying ACTLChecker to validate a rigorous implementation of the BPMN of the ICT Approval Protocol at IGFEJ, a public body under the Portuguese Ministry of Justice, by checking concurrent logs against property specifications in Action Temporal Logic, a formalism created in my master's thesis.",
+      "color": "#97CA3D",
+      "skills": [
+        "Software Verification",
+        "Formal Methods",
+        "Distributed Algorithms",
+        "Business Process Modeling"
+      ]
+    },
+    {
+      "title": "Teaching Assistant",
+      "organization": "Instituto Superior Técnico",
+      "type": null,
+      "logo": "ist.svg",
+      "website": "https://tecnico.ulisboa.pt",
+      "start": "Apr 2025",
+      "end": "Jul 2025",
+      "time": "4 mos",
+      "location": "Lisbon, Portugal",
+      "setting": "On-site",
+      "description": "Teaching Excellence Diploma 2024/2025",
+      "color": "#009DE0",
+      "skills": ["Database Management Systems", "Decision Support Systems"]
+    }
+  ],
+  "education": [
+    {
+      "school": "Instituto Superior Técnico",
+      "degree": "Master",
+      "field": "Computer Science and Engineering",
+      "logo": "ist.svg",
+      "website": "https://tecnico.ulisboa.pt",
+      "start": "Sep 2023",
+      "end": "Nov 2025",
+      "location": "Lisbon, Portugal",
+      "grade": "17.35",
+      "description": "Academic Excellence Diploma 2024/2025",
+      "color": "#009DE0",
+      "skills": ["Software Engineering", "Data Science"]
+    },
+    {
+      "school": "Instituto Superior Técnico",
+      "degree": "Undergraduate",
+      "field": "Computer Science and Engineering",
+      "logo": "ist.svg",
+      "website": "https://tecnico.ulisboa.pt",
+      "start": "Oct 2020",
+      "end": "Jul 2023",
+      "location": "Lisbon, Portugal",
+      "grade": "16.12",
+      "description": "Academic Merit Diploma 2020/2021, 2021/2022, 2022/2023",
+      "color": "#009DE0",
+      "skills": null
+    },
+    {
+      "school": "Escola Secundária São Pedro",
+      "degree": "Senior",
+      "field": "Scientific-Humanistic Track: Science and Technology",
+      "logo": "essp.png",
+      "website": "https://escolasaopedro.pt",
+      "start": "Sep 2017",
+      "end": "Jul 2020",
+      "location": "Vila Real, Portugal",
+      "grade": "19.25",
+      "description": "Excellence Diploma 2017/2018, 2018/2019, 2019/2020",
+      "color": null,
+      "skills": null
+    },
+    {
+      "school": "Escola Secundária São Pedro",
+      "degree": "Junior",
+      "field": null,
+      "logo": "essp.png",
+      "website": "https://escolasaopedro.pt",
+      "start": "Sep 2014",
+      "end": "Jun 2017",
+      "location": "Vila Real, Portugal",
+      "grade": null,
+      "description": "Excellence Diploma 2014/2015, 2015/2016, 2016/2017",
+      "color": null,
+      "skills": null
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+---
+import Resume from '../components/Resume.svelte';
+import data from '../content/resume.json';
+import "../styles/global.css";
+---
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{data.name} — Resume</title>
+    <script is:inline>
+      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    </script>
+  </head>
+  <body>
+    <main>
+      <Resume client:load data={data} />
+    </main>
+  </body>
+</html>
