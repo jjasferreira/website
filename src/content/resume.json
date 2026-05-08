@@ -49,39 +49,86 @@
       "time": "4 mos",
       "location": "Lisbon, Portugal",
       "setting": "On-site",
-      "description": "Teaching Excellence Diploma 2024/2025",
+      "description": "Instructing lab sessions and coordinating student groups in the design of relational databases, guiding entity-relationship modeling, schema normalization, transaction processing, and concurrency control while providing technical support for SQL implementation, project evaluation, and exam proctoring.",
       "color": "#009DE0",
-      "skills": ["Database Management Systems", "Decision Support Systems"]
+      "skills": ["Database Management Systems", "Decision Support Systems"],
+      "media": [
+        {
+          "title": "Teaching Excellence Diploma 2024/2025",
+          "src": "teaching-excellence-diploma-2024-2025.pdf",
+          "icon": "FileText"
+        }
+      ]
     }
   ],
+
+
   "education": [
     {
       "school": "Instituto Superior Técnico",
-      "degree": "Master",
-      "field": "Computer Science and Engineering",
       "logo": "ist.svg",
       "website": "https://tecnico.ulisboa.pt",
+      "color": "#009DE0",
+      "degree": "Master",
+      "field": "Computer Science and Engineering",
+      "url": "https://fenix.tecnico.ulisboa.pt/cursos/meic-a",
       "start": "Sep 2023",
       "end": "Nov 2025",
+      "campus": "Alameda",
       "location": "Lisbon, Portugal",
       "grade": "17.35",
-      "description": "Academic Excellence Diploma 2024/2025",
-      "color": "#009DE0",
-      "skills": ["Software Engineering", "Data Science"]
+      "description": "description",
+      "skills": ["Software Engineering", "Data Science"],
+      "media": [
+        {
+          "title": "Academic Excellence Diploma 2024/2025",
+          "src": "academic-excellence-diploma-2024-2025.pdf",
+          "icon": "FileText"
+        },
+        {
+          "title": "Master Degree Certificate",
+          "src": "master-degree-certificate.pdf",
+          "icon": "FileText"
+        }
+      ]
     },
     {
       "school": "Instituto Superior Técnico",
-      "degree": "Undergraduate",
-      "field": "Computer Science and Engineering",
       "logo": "ist.svg",
       "website": "https://tecnico.ulisboa.pt",
+      "color": "#009DE0",
+      "degree": "Undergraduate",
+      "field": "Computer Science and Engineering",
+      "url": "https://fenix.tecnico.ulisboa.pt/cursos/leic-a",
       "start": "Oct 2020",
       "end": "Jul 2023",
+      "campus": "Alameda",
       "location": "Lisbon, Portugal",
       "grade": "16.12",
-      "description": "Academic Merit Diploma 2020/2021, 2021/2022, 2022/2023",
-      "color": "#009DE0",
-      "skills": null
+      "description": "description",
+      "skills": null,
+      "media": [
+        {
+          "title": "Academic Merit Diploma 2020/2021",
+          "src": "academic-merit-diploma-2020-2021.pdf",
+          "icon": "FileText"
+        },
+        {
+          "title": "Academic Merit Diploma 2021/2022",
+          "src": "academic-merit-diploma-2021-2022.pdf",
+          "icon": "FileText"
+        },
+        {
+          "title": "Academic Merit Diploma 2022/2023",
+          "src": "academic-merit-diploma-2022-2023.pdf",
+          "icon": "FileText"
+        },
+        {
+          "title": "Undergraduate Degree Certificate",
+          "src": "undergraduate-degree-certificate.pdf",
+          "icon": "FileText"
+        }
+      ]
     },
     {
       "school": "Escola Secundária São Pedro",
@@ -91,6 +138,7 @@
       "website": "https://escolasaopedro.pt",
       "start": "Sep 2017",
       "end": "Jul 2020",
+      "campus": null,
       "location": "Vila Real, Portugal",
       "grade": "19.25",
       "description": "Excellence Diploma 2017/2018, 2018/2019, 2019/2020",
@@ -105,6 +153,7 @@
       "website": "https://escolasaopedro.pt",
       "start": "Sep 2014",
       "end": "Jun 2017",
+      "campus": null,
       "location": "Vila Real, Portugal",
       "grade": null,
       "description": "Excellence Diploma 2014/2015, 2015/2016, 2016/2017",
