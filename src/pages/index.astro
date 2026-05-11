@@ -10,11 +10,10 @@ import "../styles/global.css";
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{data.name} — Resume</title>
     <script is:inline>
-      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.documentElement.classList.add('dark');
-      } else {
-        document.documentElement.classList.remove('dark');
-      }
+      const storedTheme = localStorage.getItem('theme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const useDarkTheme = storedTheme ? storedTheme === 'dark' : prefersDark;
+      document.documentElement.classList.toggle('dark', useDarkTheme);
     </script>
   </head>
   <body>

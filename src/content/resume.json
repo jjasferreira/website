@@ -2,61 +2,108 @@
   "name": "José João Ferreira",
   "email": "jjasferreira@gmail.com",
   "location": "Lisbon, Portugal",
+  "about": "I'm an engineer and researcher focused on formal methods and software verification. My work bridges the gap between theoretical logic and practical system reliability, ranging from developing first-order temporal logic fragments to optimizing MaxSAT solvers.\nDuring my Master's, I designed a custom formalism and a high-efficiency tool for validating data-intensive properties in complex systems. I later applied this to validate implementations of public administration protocols in Portugal.\nWhether I'm benchmarking unsatisfiable core extraction or teaching a Databases course, I enjoy breaking down rigorous scientific concepts into high-impact engineering solutions.",
+  "website": "jjasferreira.github.io",
+  "github": "jjasferreira",
+  "linkedin": "jjasferreira",
   "experience": [
     {
       "title": "Visiting Scholar",
       "organization": "Carnegie Mellon University",
       "type": null,
-      "logo": "cmu.svg",
+      "logo": "light-cmu.svg",
+      "darklogo": "dark-cmu.svg",
       "website": "https://www.cmu.edu",
       "start": "Nov 2025",
       "end": "Dec 2025",
       "time": "2 mos",
       "location": "Pittsburgh, Pennsylvania, United States",
       "setting": "On-site",
+      "head": "Computer Science Department · Hosted by professor Ruben Martins",
+      "url": "https://cmuportugal.org/media/cmu-portugal-to-host-12-visiting-research-scholars-at-carnegie-mellon-in-2025",
       "description": "Benchmarking two unsatisfiable core extraction methodologies for unweighted MaxSAT. Using the MSU3 algorithm and the Glucose 3 solver via PySAT, we compare the lower bound precision and core minimality of internal solver assumptions against external resolution proof processing with DRAT-trim.",
       "color": "#C41230",
-      "skills": ["Automated Reasoning", "Constraint Optimization"]
+      "skills": ["Automated Reasoning", "Constraint Optimization"],
+      "media": [
+        {
+          "title": "A Comparative Analysis of UNSAT Core Extraction Methodologies for Unweighted MaxSAT",
+          "src": "a-comparative-analysis-of-unsat-core-extraction-methodologies-for-unweighted-maxsat.pdf",
+          "icon": "FileText"
+        },
+        {
+          "title": "maxsat-core-bench",
+          "src": "https://github.com/jjasferreira/maxsat-core-bench",
+          "icon": "Github"
+        }
+      ]
     },
     {
       "title": "Research Assistant",
       "organization": "INESC-ID",
       "type": null,
-      "logo": "inesc.svg",
+      "logo": "light-inesc.svg",
+      "darklogo": "dark-inesc.svg",
       "website": "https://www.inesc-id.pt",
       "start": "Apr 2025",
       "end": "Oct 2025",
       "time": "7 mos",
       "location": "Lisbon, Portugal",
       "setting": "Hybrid",
+      "head": "OptiGov Project · Supervised by professor Alessandro Gianola",
+      "url": "https://optigov-project.github.io",
       "description": "Applying ACTLChecker to validate a rigorous implementation of the BPMN of the ICT Approval Protocol at IGFEJ, a public body under the Portuguese Ministry of Justice, by checking concurrent logs against property specifications in Action Temporal Logic, a formalism created in my master's thesis.",
-      "color": "#97CA3D",
+      "color": "#83B035",
       "skills": [
         "Software Verification",
         "Formal Methods",
         "Distributed Algorithms",
         "Business Process Modeling"
+      ],
+      "media": [
+        {
+          "title": "First-Order Linear Temporal Logic for Testing Distributed Protocols",
+          "src": "https://ceur-ws.org/Vol-4142/paper5.pdf",
+          "icon": "ExternalLink"
+        },
+        {
+          "title": "Slides",
+          "src": "first-order-linear-temporal-logic-for-testing-distributed-protocols-slides.pdf",
+          "icon": "Presentation"
+        },
+        {
+          "title": "Application of ACTLChecker to the ICT Approval Protocol at IGFEJ as part of OptiGov",
+          "src": "application-of-actlchecker-to-the-ict-approval-protocol-at-igfej-as-part-of-optigov.pdf",
+          "icon": "FileText"
+        },
+        {
+          "title": "optigov-actl-check",
+          "src": "https://github.com/AlessandroGianola/optigov-actl-check",
+          "icon": "Github"
+        }
       ]
     },
     {
       "title": "Teaching Assistant",
       "organization": "Instituto Superior Técnico",
       "type": null,
-      "logo": "ist.svg",
+      "logo": "light-ist.svg",
+      "darklogo": "dark-ist.svg",
       "website": "https://tecnico.ulisboa.pt",
       "start": "Apr 2025",
       "end": "Jul 2025",
       "time": "4 mos",
       "location": "Lisbon, Portugal",
       "setting": "On-site",
+      "head": "Databases Course · Undergraduate, Computer Science and Engineering",
+      "url": "https://fenix.tecnico.ulisboa.pt/cursos/leic-a/disciplina-curricular/845953938489547",
       "description": "Instructing lab sessions and coordinating student groups in the design of relational databases, guiding entity-relationship modeling, schema normalization, transaction processing, and concurrency control while providing technical support for SQL implementation, project evaluation, and exam proctoring.",
       "color": "#009DE0",
       "skills": ["Database Management Systems", "Decision Support Systems"],
       "media": [
         {
           "title": "Teaching Excellence Diploma 2024/2025",
-          "src": "teaching-excellence-diploma-2024-2025.pdf",
-          "icon": "FileText"
+          "src": "",
+          "icon": "FileBadge"
         }
       ]
     }
@@ -66,7 +113,8 @@
   "education": [
     {
       "school": "Instituto Superior Técnico",
-      "logo": "ist.svg",
+      "logo": "light-ist.svg",
+      "darklogo": "dark-ist.svg",
       "website": "https://tecnico.ulisboa.pt",
       "color": "#009DE0",
       "degree": "Master",
@@ -77,24 +125,55 @@
       "campus": "Alameda",
       "location": "Lisbon, Portugal",
       "grade": "17.35",
-      "description": "description",
+      "description": null,
       "skills": ["Software Engineering", "Data Science"],
       "media": [
         {
-          "title": "Academic Excellence Diploma 2024/2025",
-          "src": "academic-excellence-diploma-2024-2025.pdf",
+          "title": "Exploring Formal Verification for First-Order Linear Temporal Logic Modulo Theories",
+          "src": "exploring-formal-verification-for-first-order-linear-temporal-logic-modulo-theories.pdf",
           "icon": "FileText"
+        },
+        {
+          "title": "Slides",
+          "src": "exploring-formal-verification-for-first-order-linear-temporal-logic-modulo-theories-slides.pdf",
+          "icon": "Presentation"
+        },
+        {
+          "title": "Specifying and Testing Distributed Protocols with Action Temporal Logic",
+          "src": "https://scholar.tecnico.ulisboa.pt/records/HYZEBk_VWzVEEi4ZK7cW2PM6t-ERrvRsA9Xu",
+          "icon": "ExternalLink"
+        },
+        {
+          "title": "Extended Abstract",
+          "src": "specifying-and-testing-distributed-protocols-with-action-temporal-logic-extended-abstract.pdf",
+          "icon": "FileText"
+        },
+        {
+          "title": "Slides",
+          "src": "specifying-and-testing-distributed-protocols-with-action-temporal-logic-slides.pdf",
+          "icon": "Presentation"
+        },
+        {
+          "title": "actl-checker",
+          "src": "https://github.com/jjasferreira/actl-checker",
+          "icon": "Github"
+        },
+        {
+          "title": "Academic Excellence Diploma 2024/2025",
+          "src": "",
+          "icon": "FileBadge"
         },
         {
           "title": "Master Degree Certificate",
           "src": "master-degree-certificate.pdf",
-          "icon": "FileText"
+          "icon": "GraduationCap"
         }
       ]
     },
     {
       "school": "Instituto Superior Técnico",
-      "logo": "ist.svg",
+      "logo": "light-ist.svg",
+      "darklogo": "dark-ist.svg",
       "website": "https://tecnico.ulisboa.pt",
       "color": "#009DE0",
       "degree": "Undergraduate",
@@ -105,28 +184,28 @@
       "campus": "Alameda",
       "location": "Lisbon, Portugal",
       "grade": "16.12",
-      "description": "description",
+      "description": null,
       "skills": null,
       "media": [
         {
           "title": "Academic Merit Diploma 2020/2021",
           "src": "academic-merit-diploma-2020-2021.pdf",
-          "icon": "FileText"
+          "icon": "FileBadge"
         },
         {
           "title": "Academic Merit Diploma 2021/2022",
           "src": "academic-merit-diploma-2021-2022.pdf",
-          "icon": "FileText"
+          "icon": "FileBadge"
         },
         {
           "title": "Academic Merit Diploma 2022/2023",
           "src": "academic-merit-diploma-2022-2023.pdf",
-          "icon": "FileText"
+          "icon": "FileBadge"
         },
         {
           "title": "Undergraduate Degree Certificate",
           "src": "undergraduate-degree-certificate.pdf",
-          "icon": "FileText"
+          "icon": "GraduationCap"
         }
       ]
     },
@@ -134,31 +213,34 @@
       "school": "Escola Secundária São Pedro",
       "degree": "Senior",
       "field": "Scientific-Humanistic Track: Science and Technology",
-      "logo": "essp.png",
+      "logo": "light-essp.png",
+      "darklogo": "dark-essp.png",
       "website": "https://escolasaopedro.pt",
       "start": "Sep 2017",
       "end": "Jul 2020",
       "campus": null,
       "location": "Vila Real, Portugal",
       "grade": "19.25",
-      "description": "Excellence Diploma 2017/2018, 2018/2019, 2019/2020",
-      "color": null,
-      "skills": null
-    },
-    {
-      "school": "Escola Secundária São Pedro",
-      "degree": "Junior",
-      "field": null,
-      "logo": "essp.png",
-      "website": "https://escolasaopedro.pt",
-      "start": "Sep 2014",
-      "end": "Jun 2017",
-      "campus": null,
-      "location": "Vila Real, Portugal",
-      "grade": null,
-      "description": "Excellence Diploma 2014/2015, 2015/2016, 2016/2017",
-      "color": null,
-      "skills": null
+      "description": null,
+      "color": "#1CB3AD",
+      "skills": null,
+      "media": [
+        {
+          "title": "Excellence Diploma 2017/2018",
+          "src": "",
+          "icon": "FileBadge"
+        },
+        {
+          "title": "Excellence Diploma 2018/2019",
+          "src": "",
+          "icon": "FileBadge"
+        },
+        {
+          "title": "Excellence Diploma 2019/2020",
+          "src": "",
+          "icon": "FileBadge"
+        }
+      ]
     }
   ]
 }
