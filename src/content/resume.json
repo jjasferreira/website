@@ -6,52 +6,76 @@
   "website": "jjasferreira.github.io",
   "github": "jjasferreira",
   "linkedin": "jjasferreira",
+  "contact": [
+    {
+      "title": "jjasferreira@gmail.com",
+      "url": "mailto:jjasferreira@gmail.com",
+      "icon": "Mail"
+    },
+    {
+      "title": "Lisbon, Portugal",
+      "url": "https://www.google.com/search?q=Lisbon,+Portugal",
+      "icon": "MapPin"
+    },
+    {
+      "title": "jjasferreira.github.io",
+      "url": "https://jjasferreira.github.io",
+      "icon": "Globe"
+    },
+    {
+      "title": "jjasferreira",
+      "url": "https://www.github.com/jjasferreira",
+      "icon": "Github"
+    },
+    {
+      "title": "jjasferreira",
+      "url": "https://www.linkedin.com/in/jjasferreira",
+      "icon": "Linkedin"
+    }
+  ],
   "experience": [
     {
       "title": "Visiting Scholar",
-      "organization": "Carnegie Mellon University",
-      "type": null,
+      "subtitle": "Carnegie Mellon University",
       "logo": "light-cmu.svg",
       "darklogo": "dark-cmu.svg",
-      "website": "https://www.cmu.edu",
-      "start": "Nov 2025",
-      "end": "Dec 2025",
-      "time": "2 mos",
-      "location": "Pittsburgh, Pennsylvania, United States",
-      "setting": "On-site",
-      "head": "Computer Science Department · Hosted by professor Ruben Martins",
-      "url": "https://cmuportugal.org/media/cmu-portugal-to-host-12-visiting-research-scholars-at-carnegie-mellon-in-2025",
-      "description": "Benchmarking two unsatisfiable core extraction methodologies for unweighted MaxSAT. Using the MSU3 algorithm and the Glucose 3 solver via PySAT, we compare the lower bound precision and core minimality of internal solver assumptions against external resolution proof processing with DRAT-trim.",
+      "logoalt": "CMU",
+      "time": "Nov 2025 - Dec 2025 · 2 mos",
+      "location": "Pittsburgh, Pennsylvania, United States · On-site",
+      "heading": "Computer Science Department · Hosted by professor Ruben Martins",
+      "titleurl": "https://cmuportugal.org/media/cmu-portugal-to-host-12-visiting-research-scholars-at-carnegie-mellon-in-2025",
+      "subtitleurl": "https://www.cmu.edu",
+      "logourl": "https://www.cmu.edu",
+      "headingurl": "https://cmuportugal.org/media/cmu-portugal-to-host-12-visiting-research-scholars-at-carnegie-mellon-in-2025",
       "color": "#C41230",
       "skills": ["Automated Reasoning", "Constraint Optimization"],
+      "description": "Benchmarking two unsatisfiable core extraction methodologies for unweighted MaxSAT. Using the MSU3 algorithm and the Glucose 3 solver via PySAT, we compare the lower bound precision and core minimality of internal solver assumptions against external resolution proof processing with DRAT-trim.",
       "media": [
         {
           "title": "A Comparative Analysis of UNSAT Core Extraction Methodologies for Unweighted MaxSAT",
-          "src": "a-comparative-analysis-of-unsat-core-extraction-methodologies-for-unweighted-maxsat.pdf",
+          "url": "a-comparative-analysis-of-unsat-core-extraction-methodologies-for-unweighted-maxsat.pdf",
           "icon": "FileText"
         },
         {
           "title": "maxsat-core-bench",
-          "src": "https://github.com/jjasferreira/maxsat-core-bench",
+          "url": "https://github.com/jjasferreira/maxsat-core-bench",
           "icon": "Github"
         }
       ]
     },
     {
       "title": "Research Assistant",
-      "organization": "INESC-ID",
-      "type": null,
+      "subtitle": "INESC-ID",
       "logo": "light-inesc.svg",
       "darklogo": "dark-inesc.svg",
-      "website": "https://www.inesc-id.pt",
-      "start": "Apr 2025",
-      "end": "Oct 2025",
-      "time": "7 mos",
-      "location": "Lisbon, Portugal",
-      "setting": "Hybrid",
-      "head": "OptiGov Project · Supervised by professor Alessandro Gianola",
-      "url": "https://optigov-project.github.io",
-      "description": "Applying ACTLChecker to validate a rigorous implementation of the BPMN of the ICT Approval Protocol at IGFEJ, a public body under the Portuguese Ministry of Justice, by checking concurrent logs against property specifications in Action Temporal Logic, a formalism created in my master's thesis.",
+      "logoalt": "INESC-ID",
+      "time": "Apr 2025 · Oct 2025 · 7 mos",
+      "location": "Lisbon, Portugal · Hybrid",
+      "heading": "OptiGov Project · Supervised by professor Alessandro Gianola",
+      "titleurl": "https://optigov-project.github.io",
+      "subtitleurl": "https://www.inesc-id.pt",
+      "logourl": "https://www.inesc-id.pt",
+      "headingurl": "https://optigov-project.github.io",
       "color": "#83B035",
       "skills": [
         "Software Verification",
@@ -59,185 +83,184 @@
         "Distributed Algorithms",
         "Business Process Modeling"
       ],
+      "description": "Applying ACTLChecker to validate a rigorous implementation of the BPMN of the ICT Approval Protocol at IGFEJ, a public body under the Portuguese Ministry of Justice, by checking concurrent logs against property specifications in Action Temporal Logic, a formalism created in my master's thesis.",
       "media": [
         {
           "title": "First-Order Linear Temporal Logic for Testing Distributed Protocols",
-          "src": "https://ceur-ws.org/Vol-4142/paper5.pdf",
+          "url": "https://ceur-ws.org/Vol-4142/paper5.pdf",
           "icon": "ExternalLink"
         },
         {
           "title": "Slides",
-          "src": "first-order-linear-temporal-logic-for-testing-distributed-protocols-slides.pdf",
+          "url": "first-order-linear-temporal-logic-for-testing-distributed-protocols-slides.pdf",
           "icon": "Presentation"
         },
         {
           "title": "Application of ACTLChecker to the ICT Approval Protocol at IGFEJ as part of OptiGov",
-          "src": "application-of-actlchecker-to-the-ict-approval-protocol-at-igfej-as-part-of-optigov.pdf",
+          "url": "application-of-actlchecker-to-the-ict-approval-protocol-at-igfej-as-part-of-optigov.pdf",
           "icon": "FileText"
         },
         {
           "title": "optigov-actl-check",
-          "src": "https://github.com/AlessandroGianola/optigov-actl-check",
+          "url": "https://github.com/AlessandroGianola/optigov-actl-check",
           "icon": "Github"
         }
       ]
     },
     {
       "title": "Teaching Assistant",
-      "organization": "Instituto Superior Técnico",
-      "type": null,
+      "subtitle": "Instituto Superior Técnico",
       "logo": "light-ist.svg",
       "darklogo": "dark-ist.svg",
-      "website": "https://tecnico.ulisboa.pt",
-      "start": "Apr 2025",
-      "end": "Jul 2025",
-      "time": "4 mos",
-      "location": "Lisbon, Portugal",
-      "setting": "On-site",
-      "head": "Databases Course · Undergraduate, Computer Science and Engineering",
-      "url": "https://fenix.tecnico.ulisboa.pt/cursos/leic-a/disciplina-curricular/845953938489547",
-      "description": "Instructing lab sessions and coordinating student groups in the design of relational databases, guiding entity-relationship modeling, schema normalization, transaction processing, and concurrency control while providing technical support for SQL implementation, project evaluation, and exam proctoring.",
+      "logoalt": "IST",
+      "time": "Apr 2025 Jul 2025 · 4 mos",
+      "location": "Lisbon, Portugal · On-site",
+      "heading": "Databases Course · Undergraduate, Computer Science and Engineering",
+      "titleurl": "https://fenix.tecnico.ulisboa.pt/cursos/leic-a/disciplina-curricular/845953938489547",
+      "subtitleurl": "https://tecnico.ulisboa.pt",
+      "logourl": "https://tecnico.ulisboa.pt",
+      "headingurl": "https://fenix.tecnico.ulisboa.pt/cursos/leic-a/disciplina-curricular/845953938489547",
       "color": "#009DE0",
       "skills": ["Database Management Systems", "Decision Support Systems"],
+      "description": "Instructing lab sessions and coordinating student groups in the design of relational databases, guiding entity-relationship modeling, schema normalization, transaction processing, and concurrency control while providing technical support for SQL implementation, project evaluation, and exam proctoring.",
       "media": [
         {
           "title": "Teaching Excellence Diploma 2024/2025",
-          "src": "",
+          "url": "",
           "icon": "FileBadge"
         }
       ]
     }
   ],
-
-
   "education": [
     {
-      "school": "Instituto Superior Técnico",
+      "title": "Instituto Superior Técnico",
+      "subtitle": "Master, Computer Science and Engineering",
       "logo": "light-ist.svg",
       "darklogo": "dark-ist.svg",
-      "website": "https://tecnico.ulisboa.pt",
+      "logoalt": "IST",
+      "time": "Sep 2023 - Nov 2025",
+      "location": "Alameda · Lisbon, Portugal",
+      "heading": "Grade: 17.35",
+      "titleurl": "https://tecnico.ulisboa.pt",
+      "subtitleurl": "https://fenix.tecnico.ulisboa.pt/cursos/meic-a",
+      "logourl": "https://tecnico.ulisboa.pt",
+      "headingurl": null,
       "color": "#009DE0",
-      "degree": "Master",
-      "field": "Computer Science and Engineering",
-      "url": "https://fenix.tecnico.ulisboa.pt/cursos/meic-a",
-      "start": "Sep 2023",
-      "end": "Nov 2025",
-      "campus": "Alameda",
-      "location": "Lisbon, Portugal",
-      "grade": "17.35",
-      "description": null,
       "skills": ["Software Engineering", "Data Science"],
+      "description": null,
       "media": [
         {
           "title": "Exploring Formal Verification for First-Order Linear Temporal Logic Modulo Theories",
-          "src": "exploring-formal-verification-for-first-order-linear-temporal-logic-modulo-theories.pdf",
+          "url": "exploring-formal-verification-for-first-order-linear-temporal-logic-modulo-theories.pdf",
           "icon": "FileText"
         },
         {
           "title": "Slides",
-          "src": "exploring-formal-verification-for-first-order-linear-temporal-logic-modulo-theories-slides.pdf",
+          "url": "exploring-formal-verification-for-first-order-linear-temporal-logic-modulo-theories-slides.pdf",
           "icon": "Presentation"
         },
         {
           "title": "Specifying and Testing Distributed Protocols with Action Temporal Logic",
-          "src": "https://scholar.tecnico.ulisboa.pt/records/HYZEBk_VWzVEEi4ZK7cW2PM6t-ERrvRsA9Xu",
+          "url": "https://scholar.tecnico.ulisboa.pt/records/HYZEBk_VWzVEEi4ZK7cW2PM6t-ERrvRsA9Xu",
           "icon": "ExternalLink"
         },
         {
           "title": "Extended Abstract",
-          "src": "specifying-and-testing-distributed-protocols-with-action-temporal-logic-extended-abstract.pdf",
+          "url": "specifying-and-testing-distributed-protocols-with-action-temporal-logic-extended-abstract.pdf",
           "icon": "FileText"
         },
         {
           "title": "Slides",
-          "src": "specifying-and-testing-distributed-protocols-with-action-temporal-logic-slides.pdf",
+          "url": "specifying-and-testing-distributed-protocols-with-action-temporal-logic-slides.pdf",
           "icon": "Presentation"
         },
         {
           "title": "actl-checker",
-          "src": "https://github.com/jjasferreira/actl-checker",
+          "url": "https://github.com/jjasferreira/actl-checker",
           "icon": "Github"
         },
         {
           "title": "Academic Excellence Diploma 2024/2025",
-          "src": "",
+          "url": null,
           "icon": "FileBadge"
         },
         {
           "title": "Master Degree Certificate",
-          "src": "master-degree-certificate.pdf",
+          "url": "master-degree-certificate.pdf",
           "icon": "GraduationCap"
         }
       ]
     },
     {
-      "school": "Instituto Superior Técnico",
+      "title": "Instituto Superior Técnico",
+      "subtitle": "Undergraduate, Computer Science and Engineering",
       "logo": "light-ist.svg",
       "darklogo": "dark-ist.svg",
-      "website": "https://tecnico.ulisboa.pt",
+      "logoalt": "IST",
+      "time": "Oct 2020 - Jul 2023",
+      "location": "Alameda · Lisbon, Portugal",
+      "heading": "Grade: 16.12",
+      "titleurl": "https://tecnico.ulisboa.pt",
+      "subtitleurl": "https://fenix.tecnico.ulisboa.pt/cursos/leic-a",
+      "logourl": "https://tecnico.ulisboa.pt",
+      "headingurl": null,
       "color": "#009DE0",
-      "degree": "Undergraduate",
-      "field": "Computer Science and Engineering",
-      "url": "https://fenix.tecnico.ulisboa.pt/cursos/leic-a",
-      "start": "Oct 2020",
-      "end": "Jul 2023",
-      "campus": "Alameda",
-      "location": "Lisbon, Portugal",
-      "grade": "16.12",
-      "description": null,
       "skills": null,
+      "description": null,
       "media": [
         {
           "title": "Academic Merit Diploma 2020/2021",
-          "src": "academic-merit-diploma-2020-2021.pdf",
+          "url": "academic-merit-diploma-2020-2021.pdf",
           "icon": "FileBadge"
         },
         {
           "title": "Academic Merit Diploma 2021/2022",
-          "src": "academic-merit-diploma-2021-2022.pdf",
+          "url": "academic-merit-diploma-2021-2022.pdf",
           "icon": "FileBadge"
         },
         {
           "title": "Academic Merit Diploma 2022/2023",
-          "src": "academic-merit-diploma-2022-2023.pdf",
+          "url": "academic-merit-diploma-2022-2023.pdf",
           "icon": "FileBadge"
         },
         {
           "title": "Undergraduate Degree Certificate",
-          "src": "undergraduate-degree-certificate.pdf",
+          "url": "undergraduate-degree-certificate.pdf",
           "icon": "GraduationCap"
         }
       ]
     },
     {
-      "school": "Escola Secundária São Pedro",
-      "degree": "Senior",
-      "field": "Scientific-Humanistic Track: Science and Technology",
+      "title": "Escola Secundária São Pedro",
+      "subtitle": "Senior, Scientific-Humanistic Track: Science and Technology",
       "logo": "light-essp.png",
       "darklogo": "dark-essp.png",
-      "website": "https://escolasaopedro.pt",
-      "start": "Sep 2017",
-      "end": "Jul 2020",
-      "campus": null,
+      "logoalt": "ESSP",
+      "time": "Sep 2017 - Jul 2020",
       "location": "Vila Real, Portugal",
-      "grade": "19.25",
-      "description": null,
+      "heading": "Grade: 19.25",
+      "titleurl": "https://escolasaopedro.pt",
+      "subtitleurl": null,
+      "logourl": "https://escolasaopedro.pt",
+      "headingurl": null,
       "color": "#1CB3AD",
       "skills": null,
+      "description": null,
       "media": [
         {
           "title": "Excellence Diploma 2017/2018",
-          "src": "",
+          "url": null,
           "icon": "FileBadge"
         },
         {
           "title": "Excellence Diploma 2018/2019",
-          "src": "",
+          "url": null,
           "icon": "FileBadge"
         },
         {
           "title": "Excellence Diploma 2019/2020",
-          "src": "",
+          "url": null,
           "icon": "FileBadge"
         }
       ]
