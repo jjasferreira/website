@@ -23,7 +23,7 @@
 </script>
 
 <div
-  class="rounded-xl border-2 border-gray-200 bg-white px-6 pt-4 pb-3 dark:border-gray-800 dark:bg-gray-950"
+  class="rounded-xl border-2 border-mist-200 bg-white px-6 pt-4 pb-3 dark:border-mist-800 dark:bg-mist-950"
 >
   <h2 class="mb-2 text-xl font-semibold text-black dark:text-white">
     {title}
@@ -36,7 +36,7 @@
                         --darkcolor: color-mix(in srgb, {back.color}, black 10%)"
         class={i === 0
           ? "flex gap-3 pt-1.5"
-          : "mt-2 flex gap-3 border-t border-gray-200 dark:border-gray-800 pt-2"}
+          : "mt-2 flex gap-3 border-t border-mist-200 dark:border-mist-800 pt-2"}
       >
         <!-- Logo -->
         {#if back.logo}
@@ -82,7 +82,7 @@
                 {/if}
               </h4>
             </div>
-            <div class="text-sm text-gray-500 sm:text-right">
+            <div class="text-sm text-mist-500 sm:text-right">
               <h5 class="sm:pt-1">
                 {back.time}
               </h5>
@@ -92,7 +92,7 @@
           <!-- Heading -->
           {#if back.heading}
             <h6
-              class="pt-0.5 pb-0.75 sm:py-0.75 text-xs font-medium text-gray-600 dark:text-gray-400"
+              class="pt-0.5 pb-0.75 sm:py-0.75 text-xs font-medium text-mist-600 dark:text-mist-400"
             >
               {#if back.headingurl}
                 <a
@@ -122,7 +122,7 @@
           {/if}
           <!-- Description -->
           {#if back.description}
-            <p class="py-0.75 text-xs text-gray-800 dark:text-gray-200">
+            <p class="py-0.75 text-xs text-mist-800 dark:text-mist-200">
               {back.description}
             </p>
           {/if}

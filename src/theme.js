@@ -1,6 +1,6 @@
 import { writable } from "svelte/store";
 
-const getThemeFromEnvironment = () => {
+export const getThemeFromEnvironment = () => {
   if (typeof document === "undefined") {
     return false;
   }

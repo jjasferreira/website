@@ -15,7 +15,7 @@
 </script>
 
 <div
-  class="rounded-xl border-2 border-gray-200 bg-white px-6 pt-4 pb-3 dark:border-gray-800 dark:bg-gray-950"
+  class="rounded-xl border-2 border-mist-200 bg-white px-6 pt-4 pb-3 dark:border-mist-800 dark:bg-mist-950"
 >
   <h2 class="mb-2 text-xl font-semibold text-black dark:text-white">{title}</h2>
   <div class="space-y-2">
@@ -23,7 +23,7 @@
       <div
         class={i === 0
           ? "pt-1"
-          : "border-t border-gray-200 dark:border-gray-800 pt-2"}
+          : "border-t border-mist-200 dark:border-mist-800 pt-2"}
       >
         <!-- Project Title -->
         <h3 class="text-sm font-semibold text-black dark:text-white">
@@ -44,39 +44,9 @@
         </h3>
 
         <!-- Project Description -->
-        <p class="py-0.75 text-[11px] text-gray-800 dark:text-gray-200">
+        <p class="py-0.75 text-xs text-mist-800 dark:text-mist-200">
           {project.description}
         </p>
-
-        <!-- Programming Languages 
-        {#if project.programming && project.programming.length > 0}
-          <div class="pt-0.75 space-y-1">
-            <div
-              class="flex h-1.5 rounded-full overflow-hidden gap-0 bg-gray-200 dark:bg-gray-800"
-            >
-              {#each project.programming as lang}
-                {@const color = languageColorMap[lang.language]}
-                <div
-                  class="transition-all"
-                  style="flex-grow: {lang.percentage}; background-color: {color}"
-                  title="{lang.language} {lang.percentage}%"
-                ></div>
-              {/each}
-            </div>
-            <div class="flex flex-wrap gap-2 text-[10px]">
-              {#each project.programming as lang}
-                {@const color = languageColorMap[lang.language]}
-                <span class="text-gray-600 dark:text-gray-400">
-                  <span style="color: {color}" class="font-medium"
-                    >{lang.language}</span
-                  >
-                  {lang.percentage}%
-                </span>
-              {/each}
-            </div>
-          </div>
-        {/if}
-        -->
       </div>
     {/each}
   </div>
