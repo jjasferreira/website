@@ -1,21 +1,24 @@
 <script lang="ts">
   import Theme from "./Theme.svelte";
+  import Print from "./Print.svelte";
+  import Code from "./Code.svelte";
   import Profile from "./Profile.svelte";
   import Contact from "./Contact.svelte";
   import Skills from "./Skills.svelte";
   import Projects from "./Projects.svelte";
   import Background from "./Background.svelte";
-  import Print from "./Print.svelte";
+  import Footer from "./Footer.svelte";
 
   let { data }: { data: any } = $props();
 </script>
 
-<div class="min-h-screen bg-mist-50 px-5 py-6 dark:bg-mist-900">
-  <div class="mx-auto max-w-5xl">
+<div class="min-h-screen px-5 py-6 bg-mist-50 dark:bg-mist-900">
+  <div class="max-w-5xl mx-auto">
     <!-- First Row -->
-    <div class="print:hidden mb-4 flex gap-4">
+    <div class="flex gap-4 mb-4 print:hidden">
       <Theme />
       <Print />
+      <Code />
     </div>
     <div class="mb-4 space-y-4">
       <Profile {data} />
@@ -29,16 +32,8 @@
           class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-1"
         >
           <Contact contact={data.contact} />
-          <Skills
-            fields={[
-              ...data.experience.flatMap((exp: any) => exp.fields),
-              ...data.education.flatMap((edu: any) => edu.fields),
-            ]}
-            tools={data.projects.tools}
-            frameworks={data.projects.frameworks}
-            programming={data.projects.programming}
-          />
-          <Projects title="Projects" projects={data.projects} />
+          <Skills skills={data.skills} />
+          <Projects projects={data.projects} skills={data.skills} />
         </div>
       </div>
       <!-- Right Column -->
@@ -47,5 +42,6 @@
         <Background title="Education" background={data.education} />
       </div>
     </div>
+    <Footer name={data.fullname} />
   </div>
 </div>

@@ -1,5 +1,6 @@
 {
   "name": "José João Ferreira",
+  "fullname": "José João Alves dos Santos Ferreira",
   "email": "jjasferreira@gmail.com",
   "location": "Lisbon, Portugal",
   "about": "Engineer and researcher specializing in formal methods and software verification. My work spans from theoretical logic, like first-order temporal fragments, to practical reliability through MaxSAT solver optimization. I’ve developed custom formalisms for validating data-intensive systems and applied these tools to secure public administration protocols. Whether teaching or benchmarking, I focus on turning rigorous science into high-impact engineering.",
@@ -33,8 +34,255 @@
       "icon": "Linkedin"
     }
   ],
-  "experience": [
-    {
+  "skills": {
+    "fields" : [
+      "Automated Reasoning",
+      "Constraint Optimization",
+      "Software Verification",
+      "Formal Methods",
+      "Distributed Algorithms",
+      "Business Process Modeling",
+      "Database Management Systems",
+      "Decision Support Systems",
+      "Software Engineering",
+      "Data Science"
+    ],
+    "frameworks": {
+      "bootstrap": {
+        "name": "Bootstrap",
+        "url": "https://getbootstrap.com/",
+        "icon": "bootstrap.svg",
+        "level": 3,
+        "color": "#712CF9"
+      },
+      "flask": {
+        "name": "Flask",
+        "url": "https://flask.palletsprojects.com/",
+        "icon": "flask.svg",
+        "level": 4,
+        "color": "#3BABC3"
+      },
+      "grpc": {
+        "name": "gRPC",
+        "url": "https://grpc.io/",
+        "icon": "grpc.svg",
+        "level": 2,
+        "color": "#03B6B4"
+      },
+      "threejs": {
+        "name": "Three.js",
+        "url": "https://threejs.org/",
+        "icon": "threejs.svg",
+        "level": 3,
+        "color": "#FF0000"
+      }
+    },
+    "programming": {
+      "cplusplus": {
+        "name": "C++",
+        "url": "https://isocpp.org/",
+        "icon": "cplusplus.svg",
+        "level": 3,
+        "color": "#00599C"
+      },
+      "css": {
+        "name": "CSS",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+        "icon": "css.svg",
+        "level": 3,
+        "color": "#663399"
+      },
+      "html": {
+        "name": "HTML",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+        "icon": "html.svg",
+        "level": 3,
+        "color": "#F06529"
+      },
+      "java": {
+        "name": "Java",
+        "url": "https://www.oracle.com/java/",
+        "icon": "java.svg",
+        "level": 3,
+        "color": "#ED8B00"
+      },
+      "javascript": {
+        "name": "JavaScript",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+        "icon": "javascript.svg",
+        "level": 1,
+        "color": "#F0DB4F"
+      },
+      "julia": {
+        "name": "Julia",
+        "url": "https://julialang.org/",
+        "icon": "julia.svg",
+        "level": 2,
+        "color": "#9558B2"
+      },
+      "makefile": {
+        "name": "Makefile",
+        "url": "https://www.gnu.org/software/make/manual/make.html",
+        "icon": "gnu.svg",
+        "level": 2,
+        "color": "#427819"
+      },
+      "python": {
+        "name": "Python",
+        "url": "https://python.org",
+        "icon": "python.svg",
+        "level": 4,
+        "color": "#4B8BBE"
+      },
+      "r": {
+        "name": "R",
+        "url": "https://www.r-project.org/",
+        "icon": "r.svg",
+        "level": 2,
+        "color": "#276DC2"
+      },
+      "shell": {
+        "name": "Shell",
+        "url": "https://www.gnu.org/software/bash/",
+        "icon": "bash.svg",
+        "level": 3,
+        "color": "#4EAA25"
+      },
+      "sql": {
+        "name": "SQL",
+        "url": "https://www.iso.org/standard/76583.html",
+        "icon": "postgresql.svg",
+        "level": 4,
+        "color": "#336791"
+      }
+    },
+    "tools": {
+      "git": {
+        "name": "Git",
+        "url": "https://git-scm.com/",
+        "icon": "git.svg",
+        "level": 4,
+        "color": "#F05133"
+      },
+      "intellij": {
+        "name": "IntelliJ IDEA",
+        "url": "https://www.jetbrains.com/idea/",
+        "icon": "intellij.svg",
+        "level": 2,
+        "color": "#FE2857"
+      },
+      "maven": {
+        "name": "Maven",
+        "url": "https://maven.apache.org/",
+        "icon": "maven.svg",
+        "level": 3,
+        "color": "#F79A23"
+      },
+      "obsidian": {
+        "name": "Obsidian",
+        "url": "https://obsidian.md/",
+        "icon": "obsidian.svg",
+        "level": 2,
+        "color": "#A079FF"
+      },
+      "postgresql": {
+        "name": "PostgreSQL",
+        "url": "https://www.postgresql.org/",
+        "icon": "postgresql.svg",
+        "level": 4,
+        "color": "#336791"
+      },
+      "rstudio": {
+        "name": "RStudio",
+        "url": "https://posit.co/products/rstudio/",
+        "icon": "rstudio.svg",
+        "level": 2,
+        "color": "#75AADB"
+      },
+      "vscode": {
+        "name": "VS Code",
+        "url": "https://code.visualstudio.com/",
+        "icon": "vscode.svg",
+        "level": 4,
+        "color": "#0098FF"
+      }
+    },
+    "languages": {
+      "por": {
+        "name": "Portuguese",
+        "level": "Native"
+      },
+      "eng": {
+        "name": "English",
+        "level": "C2 (Proficiency)"
+      },
+      "spa": {
+        "name": "Spanish",
+        "level": "B1 (Intermediate)"
+      }
+    }
+  },
+  "projects": {
+    "personal":[],
+    "university": [
+      {
+        "title": "meta-circular-evaluator",
+        "description": "A meta-circular evaluator with reflection and metaprogramming properties for a subset of Julia",
+        "url": "https://github.com/jjasferreira/meta-circular-evaluator-jl",
+        "icon": "github.svg",
+        "frameworks": [],
+        "programming": ["julia"],
+        "tools": ["vscode"]
+      },
+      {
+        "title": "robotruck-ufo",
+        "description": "A scene with a robot/truck and a trailer and a scene with a UFO in the countryside",
+        "url": "https://github.com/jjasferreira/robotruck-ufo-js",
+        "icon": "github.svg",
+        "frameworks": ["threejs"],
+        "programming": ["javascript", "html", "css"],
+        "tools": ["vscode"]
+      },
+      {
+        "title": "distributed-ledger",
+        "description": "A distributed ledger for transactions using Protocol Buffers for service contracts and message serialization",
+        "url": "https://github.com/jjasferreira/distributed-ledger",
+        "icon": "github.svg",
+        "frameworks":["grpc"],
+        "programming": ["java"],
+        "tools":["maven", "intellij"]
+      },
+      {
+        "title": "ivm-manager",
+        "description": "A server-side Intelligent Vending Machine manager accessible by a modern web application",
+        "url": "https://github.com/jjasferreira/ivm-manager-pgsql",
+        "icon": "github.svg",
+        "frameworks": ["flask", "bootstrap"],
+        "programming": ["python", "sql", "html", "css"],
+        "tools": ["postgresql", "vscode"]
+      },
+      {
+        "title": "probability-statistics",
+        "description": "A set of probabilistic and plotting problems and resolutions using statistical computing and graphics",
+        "url": "https://github.com/jjasferreira/probability-statistics-r",
+        "icon": "github.svg",
+        "frameworks": [],
+        "programming": ["r"],
+        "tools": ["rstudio", "obsidian"]
+      },
+      {
+        "title": "takuzu",
+        "description": "A program that solves the Takuzu problem using Artificial Intelligence search techniques",
+        "url": "https://github.com/jjasferreira/takuzu-py",
+        "icon": "github.svg",
+        "frameworks": [],
+        "programming": ["python", "shell"],
+        "tools": ["vscode"]
+      }
+    ]
+  },
+  "experience": {
+    "cmu": {
       "title": "Visiting Scholar",
       "subtitle": "Carnegie Mellon University",
       "logo": "light-cmu.svg",
@@ -49,7 +297,7 @@
       "headingurl": "https://cmuportugal.org/media/cmu-portugal-to-host-12-visiting-research-scholars-at-carnegie-mellon-in-2025",
       "color": "#C41230",
       "fields": ["Automated Reasoning", "Constraint Optimization"],
-      "description": "Benchmarking two unsatisfiable core extraction methodologies for unweighted MaxSAT. Using the MSU3 algorithm and the Glucose 3 solver via PySAT, we compare the lower bound precision and core minimality of internal solver assumptions against external resolution proof processing with DRAT-trim.",
+      "description": "Benchmarked two unsatisfiable core extraction methodologies for unweighted MaxSAT. Using the MSU3 algorithm and the Glucose 3 solver via PySAT, we compared the lower bound precision and core minimality of internal solver assumptions against external resolution proof processing with DRAT-trim.",
       "media": [
         {
           "title": "A Comparative Analysis of UNSAT Core Extraction Methodologies for Unweighted MaxSAT",
@@ -63,12 +311,12 @@
         }
       ]
     },
-    {
+    "inesc": {
       "title": "Research Assistant",
       "subtitle": "INESC-ID",
       "logo": "light-inesc.svg",
       "darklogo": "dark-inesc.svg",
-      "logoalt": "INESC-ID",
+      "logoalt": "INESC",
       "time": "Apr 2025 · Oct 2025 · 7 mos",
       "location": "Lisbon, Portugal · Hybrid",
       "heading": "OptiGov Project · Supervised by professor Alessandro Gianola",
@@ -83,7 +331,7 @@
         "Distributed Algorithms",
         "Business Process Modeling"
       ],
-      "description": "Applying ACTLChecker to validate a rigorous implementation of the BPMN of the ICT Approval Protocol at IGFEJ, a public body under the Portuguese Ministry of Justice, by checking concurrent logs against property specifications in Action Temporal Logic, a formalism created in my master's thesis.",
+      "description": "Applied ACTLChecker to validate a rigorous implementation of the BPMN of the ICT Approval Protocol at IGFEJ, a public body under the Portuguese Ministry of Justice, by checking concurrent logs against property specifications in Action Temporal Logic, a formalism created in my master's thesis.",
       "media": [
         {
           "title": "First-Order Linear Temporal Logic for Testing Distributed Protocols",
@@ -107,7 +355,7 @@
         }
       ]
     },
-    {
+    "ist": {
       "title": "Teaching Assistant",
       "subtitle": "Instituto Superior Técnico",
       "logo": "light-ist.svg",
@@ -115,14 +363,14 @@
       "logoalt": "IST",
       "time": "Apr 2025 Jul 2025 · 4 mos",
       "location": "Lisbon, Portugal · On-site",
-      "heading": "Databases Course · Undergraduate, Computer Science and Engineering",
+      "heading": "Databases Course · Bachelor, Computer Science and Engineering",
       "titleurl": "https://fenix.tecnico.ulisboa.pt/cursos/leic-a/disciplina-curricular/845953938489547",
       "subtitleurl": "https://tecnico.ulisboa.pt",
       "logourl": "https://tecnico.ulisboa.pt",
       "headingurl": "https://fenix.tecnico.ulisboa.pt/cursos/leic-a/disciplina-curricular/845953938489547",
       "color": "#009DE0",
       "fields": ["Database Management Systems", "Decision Support Systems"],
-      "description": "Instructing lab sessions and coordinating student groups in the design of relational databases, guiding entity-relationship modeling, schema normalization, transaction processing, and concurrency control while providing technical support for SQL implementation, project evaluation, and exam proctoring.",
+      "description": "Instructed lab sessions and coordinated student groups in the design of relational databases, guiding entity-relationship modeling, schema normalization, transaction processing, and concurrency control while providing technical support for SQL implementation, project evaluation, and exam proctoring.",
       "media": [
         {
           "title": "Teaching Excellence Diploma 2024/2025",
@@ -131,9 +379,9 @@
         }
       ]
     }
-  ],
-  "education": [
-    {
+  },
+  "education": {
+    "master": {
       "title": "Instituto Superior Técnico",
       "subtitle": "Master, Computer Science and Engineering",
       "logo": "light-ist.svg",
@@ -148,7 +396,7 @@
       "headingurl": null,
       "color": "#009DE0",
       "fields": ["Software Engineering", "Data Science"],
-      "description": null,
+      "description": "Relevant coursework: Software Architecture, Software Specification, Advanced Programming, Software Testing and Validation, Data Science, Information Visualization, Cloud Computing and Virtualization, Data Analysis and Integration, Data and Information Systems Management, Network and Computer Security, Multimedia Content Production, User-Centered Design and Evaluation, Communication Skills",
       "media": [
         {
           "title": "Exploring Formal Verification for First-Order Linear Temporal Logic Modulo Theories",
@@ -192,9 +440,9 @@
         }
       ]
     },
-    {
+    "bachelor": {
       "title": "Instituto Superior Técnico",
-      "subtitle": "Undergraduate, Computer Science and Engineering",
+      "subtitle": "Bachelor, Computer Science and Engineering",
       "logo": "light-ist.svg",
       "darklogo": "dark-ist.svg",
       "logoalt": "IST",
@@ -207,7 +455,7 @@
       "headingurl": null,
       "color": "#009DE0",
       "fields": null,
-      "description": null,
+      "description": "Relevant coursework: Linear Algebra, Differential and Integral Calculus, Management, Logic for Programming, Elements of Discrete Mathematics, Object-Oriented Programming, Operating Systems, Databases, Artificial Intelligence, Human-Computer Interaction, Probability and Statistics, Theory of Computation, Systems Analysis and Modeling, Machine Learning, Computer Organization, Computer Networks, Compilers, Computer Graphics, Software Engineering, Distributed Systems",
       "media": [
         {
           "title": "Academic Merit Diploma 2020/2021",
@@ -225,13 +473,13 @@
           "icon": "FileBadge"
         },
         {
-          "title": "Undergraduate Degree Certificate",
-          "url": "undergraduate-degree-certificate.pdf",
+          "title": "Bachelor Degree Certificate",
+          "url": "bachelor-degree-certificate.pdf",
           "icon": "GraduationCap"
         }
       ]
     },
-    {
+    "senior": {
       "title": "Escola Secundária São Pedro",
       "subtitle": "Senior, Scientific-Humanistic Track: Science and Technology",
       "logo": "light-essp.png",
@@ -265,235 +513,5 @@
         }
       ]
     }
-  ],
-  "projects": {
-    "tools": [
-      {
-        "language": "VS Code",
-        "url": "https://code.visualstudio.com/",
-        "icon": "vscode.svg",
-        "level": 4,
-        "color": "#0098FF"
-      },
-      {
-        "language": "Git",
-        "url": "https://git-scm.com/",
-        "icon": "git.svg",
-        "level": 4,
-        "color": "#F05133"
-      },
-      {
-        "language": "RStudio",
-        "url": "https://posit.co/products/rstudio/",
-        "icon": "rstudio.svg",
-        "level": 2,
-        "color": "#75AADB"
-      },
-      {
-        "language": "Obsidian",
-        "url": "https://obsidian.md/",
-        "icon": "obsidian.svg",
-        "level": 2,
-        "color": "#A079FF"
-      },
-      {
-        "language": "PostgreSQL",
-        "url": "https://www.postgresql.org/",
-        "icon": "postgresql.svg",
-        "level": 4,
-        "color": "#336791"
-      },
-      {
-        "language": "Maven",
-        "url": "https://maven.apache.org/",
-        "icon": "maven.svg",
-        "level": 3,
-        "color": "#F79A23"
-      },
-      {
-        "language": "IntelliJ IDEA",
-        "url": "https://www.jetbrains.com/idea/",
-        "icon": "intellij.svg",
-        "level": 2,
-        "color": "#FE2857"
-      }
-    ],
-    "frameworks": [
-      {
-        "language": "Three.js",
-        "url": "https://threejs.org/",
-        "icon": "threejs.svg",
-        "level": 3,
-        "color": "#FF0000"
-      },
-      {
-        "language": "gRPC",
-        "url": "https://grpc.io/",
-        "icon": "grpc.svg",
-        "level": 2,
-        "color": "#03B6B4"
-      },
-      {
-        "language": "Flask",
-        "url": "https://flask.palletsprojects.com/",
-        "icon": "flask.svg",
-        "level": 4,
-        "color": "#3BABC3"
-      },
-      {
-        "language": "Bootstrap",
-        "url": "https://getbootstrap.com/",
-        "icon": "bootstrap.svg",
-        "level": 3,
-        "color": "#712CF9"
-      }
-    ],
-    "programming": [
-      {
-        "language": "C++",
-        "url": "https://isocpp.org/",
-        "icon": "cplusplus.svg",
-        "level": 3,
-        "color": "#00599C"
-      },
-      {
-        "language": "CSS",
-        "url": "https://developer.mozilla.org/en-US/docs/Web/CSS",
-        "icon": "css.svg",
-        "level": 3,
-        "color": "#663399"
-      },
-      {
-        "language": "HTML",
-        "url": "https://developer.mozilla.org/en-US/docs/Web/HTML",
-        "icon": "html.svg",
-        "level": 3,
-        "color": "#F06529"
-      },
-      {
-        "language": "Java",
-        "url": "https://www.oracle.com/java/",
-        "icon": "java.svg",
-        "level": 3,
-        "color": "#ED8B00"
-      },
-      {
-        "language": "JavaScript",
-        "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-        "icon": "javascript.svg",
-        "level": 1,
-        "color": "#F0DB4F"
-      },
-      {
-        "language": "Julia",
-        "url": "https://julialang.org/",
-        "icon": "julia.svg",
-        "level": 2,
-        "color": "#9558B2"
-      },
-      {
-        "language": "Makefile",
-        "url": "https://www.gnu.org/software/make/manual/make.html",
-        "icon": "gnu.svg",
-        "level": 2,
-        "color": "#427819"
-      },
-      {
-        "language": "SQL",
-        "url": "https://www.iso.org/standard/76583.html",
-        "icon": "postgresql.svg",
-        "level": 4,
-        "color": "#336791"
-      },
-      {
-        "language": "Python",
-        "url": "https://python.org",
-        "icon": "python.svg",
-        "level": 4,
-        "color": "#4B8BBE"
-      },
-      {
-        "language": "R",
-        "url": "https://www.r-project.org/",
-        "icon": "r.svg",
-        "level": 2,
-        "color": "#276DC2"
-      },
-      {
-        "language": "Shell",
-        "url": "https://www.gnu.org/software/bash/",
-        "icon": "bash.svg",
-        "level": 3,
-        "color": "#4EAA25"
-      }
-    ],
-    "personal":[],
-    "university": [
-      {
-        "title": "meta-circular-evaluator",
-        "description": "A meta-circular evaluator with reflection and metaprogramming properties for a subset of Julia",
-        "url": "https://github.com/jjasferreira/meta-circular-evaluator-jl",
-        "icon": "Github",
-        "tools": ["Visual Studio Code"],
-        "programming": ["Julia"]
-      },
-      {
-        "title": "robotruck-ufo",
-        "description": "A scene with a robot/truck and a trailer and a scene with a UFO in the countryside",
-        "url": "https://github.com/jjasferreira/robotruck-ufo-js",
-        "icon": "Github",
-        "tools": ["Visual Studio Code"],
-        "frameworks": ["Three.js"],
-        "programming": ["JavaScript", "HTML", "CSS"]
-      },
-      {
-        "title": "distributed-ledger",
-        "description": "A distributed ledger for transactions using Protocol Buffers for service contracts and message serialization",
-        "url": "https://github.com/jjasferreira/distributed-ledger",
-        "icon": "Github",
-        "tools":["Maven", "IntelliJ IDEA"],
-        "frameworks":["gRPC"],
-        "programming": ["Java"]
-      },
-      {
-        "title": "ivm-manager",
-        "description": "A server-side Intelligent Vending Machine manager accessible by a modern web application",
-        "url": "https://github.com/jjasferreira/ivm-manager-pgsql",
-        "icon": "Github",
-        "tools": ["PostgreSQL", "Visual Studio Code"],
-        "frameworks": ["Flask", "Bootstrap"],
-        "programming": ["Python", "SQL", "HTML", "CSS"]
-      },
-      {
-        "title": "probability-statistics",
-        "description": "A set of probabilistic and plotting problems and resolutions using statistical computing and graphics",
-        "url": "https://github.com/jjasferreira/probability-statistics-r",
-        "icon": "Github",
-        "tools": ["RStudio", "Obsidian"],
-        "programming": ["R"]
-      },
-      {
-        "title": "takuzu",
-        "description": "A program that solves the Takuzu problem using Artificial Intelligence search techniques",
-        "url": "https://github.com/jjasferreira/takuzu-py",
-        "icon": "Github",
-        "tools": ["Visual Studio Code"],
-        "programming": ["Python", "Shell"]
-      }
-    ]
-  },
-  "languages":[
-    {
-      "language": "Portuguese",
-      "proficiency": "Native"
-    },
-    {
-      "language": "English",
-      "proficiency": "C2 (Proficiency)"
-    },
-    {
-      "language": "Spanish",
-      "proficiency": "B1 (Intermediate)"
-    }
-  ]
+  }
 }

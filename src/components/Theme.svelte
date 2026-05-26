@@ -12,15 +12,15 @@
   type="button"
   aria-label="theme"
   onclick={toggleTheme}
-  class="flex h-9 w-14 items-center border-2 rounded-full bg-mist-200 border-mist-200 dark:border-mist-800 dark:bg-mist-800 hover:opacity-80"
+  class="flex items-center border-2 rounded-full cursor-pointer h-9 w-14 bg-mist-200 border-mist-200 dark:border-mist-800 dark:bg-mist-800"
 >
   <span
-    class={`flex h-full w-[32.8px] items-center justify-center bg-white dark:bg-mist-950 rounded-full duration-300 text-mist-500 cursor-pointer ${$dark ? "translate-x-5" : "translate-x-0"}`}
+    class={`flex h-full w-[32.8px] items-center justify-center bg-white dark:bg-mist-950 rounded-full duration-300 hover:opacity-80 text-mist-500 ${$dark ? "translate-x-[19.75px]" : "translate-x-0"}`}
   >
     {#if $dark}
-      <Moon strokeWidth={2.25} class="h-4 w-4" />
+      <Moon strokeWidth={2.25} class="w-4 h-4" />
     {:else}
-      <Sun strokeWidth={2.25} class="h-4 w-4" />
+      <Sun strokeWidth={2.25} class="w-4 h-4" />
     {/if}
   </span>
 </button>

@@ -10,7 +10,7 @@
   let {
     title = "Background",
     background,
-  }: { title?: string; background: any[] } = $props();
+  }: { title?: string; background: any } = $props();
   import { dark } from "../theme.js";
   const icons: Record<string, any> = {
     ExternalLink,
@@ -23,20 +23,20 @@
 </script>
 
 <div
-  class="rounded-xl border-2 border-mist-200 bg-white px-6 pt-4 pb-3 dark:border-mist-800 dark:bg-mist-950"
+  class="px-6 pt-4 pb-3 bg-white border-2 rounded-xl border-mist-200 dark:border-mist-800 dark:bg-mist-950"
 >
   <h2 class="mb-2 text-xl font-semibold text-black dark:text-white">
     {title}
   </h2>
   <div>
-    {#each background as back, i}
+    {#each Object.values(background as Record<string, any>) as back, i}
       <div
         style=" --color: {back.color};
                         --lightcolor: color-mix({back.color}, white 20%);
                         --darkcolor: color-mix(in srgb, {back.color}, black 10%)"
         class={i === 0
-          ? "flex gap-3 pt-1.5"
-          : "mt-2 flex gap-3 border-t border-mist-200 dark:border-mist-800 pt-2"}
+          ? "flex flex-row gap-3 pt-1.5"
+          : "mt-2 flex flex-row gap-3 border-t border-mist-200 dark:border-mist-800 pt-2"}
       >
         <!-- Logo -->
         {#if back.logo}
@@ -50,14 +50,14 @@
             </a>
           </div>
         {/if}
-        <div class="grow">
+        <div class="min-w-0 grow">
           <!-- Details -->
           <div
             class="flex flex-col sm:flex-row sm:items-center sm:justify-between"
           >
             <div>
               <h3
-                class="text-base font-semibold text-black dark:text-white transition hover:opacity-80"
+                class="text-base font-semibold text-black transition dark:text-white hover:opacity-80"
               >
                 <a
                   href={back.titleurl}
@@ -143,7 +143,7 @@
                         <Icon
                           strokeWidth={2.25}
                           removePadding
-                          class="h-3 w-3"
+                          class="w-3 h-3"
                         />
                       {/if}
                     </div>
@@ -158,7 +158,7 @@
                         <Icon
                           strokeWidth={2.25}
                           removePadding
-                          class="h-3 w-3"
+                          class="w-3 h-3"
                         />
                       {/if}
                     </div>
