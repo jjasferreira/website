@@ -50,37 +50,58 @@
     "frameworks": {
       "bootstrap": {
         "name": "Bootstrap",
-        "url": "https://getbootstrap.com/",
+        "url": "https://getbootstrap.com",
         "icon": "bootstrap.svg",
         "level": 3,
         "color": "#712CF9"
       },
       "flask": {
         "name": "Flask",
-        "url": "https://flask.palletsprojects.com/",
+        "url": "https://flask.palletsprojects.com",
         "icon": "flask.svg",
         "level": 4,
         "color": "#3BABC3"
       },
       "grpc": {
         "name": "gRPC",
-        "url": "https://grpc.io/",
+        "url": "https://grpc.io",
         "icon": "grpc.svg",
         "level": 2,
         "color": "#03B6B4"
       },
+      "hibernate": {
+        "name": "Hibernate",
+        "url": "https://hibernate.org",
+        "icon": "hibernate.svg",
+        "level": 1,
+        "color": "#BCAE79"
+      },
+      "p5js": {
+        "name": "p5.js",
+        "url": "https://p5js.org",
+        "icon": "p5js.svg",
+        "level": 1,
+        "color": "#ED225D"
+      },
       "threejs": {
         "name": "Three.js",
-        "url": "https://threejs.org/",
+        "url": "https://threejs.org",
         "icon": "threejs.svg",
         "level": 3,
         "color": "#FF0000"
+      },
+      "vuejs": {
+        "name": "Vue.js",
+        "url": "https://vuejs.org",
+        "icon": "vuejs.svg",
+        "level": 1,
+        "color": "#41B883"
       }
     },
     "programming": {
       "cplusplus": {
         "name": "C++",
-        "url": "https://isocpp.org/",
+        "url": "https://isocpp.org",
         "icon": "cplusplus.svg",
         "level": 3,
         "color": "#00599C"
@@ -92,6 +113,13 @@
         "level": 3,
         "color": "#663399"
       },
+      "groovy": {
+        "name": "Groovy",
+        "url": "https://groovy-lang.org",
+        "icon": "groovy.svg",
+        "level": 1,
+        "color": "#619CBC"
+      },
       "html": {
         "name": "HTML",
         "url": "https://developer.mozilla.org/en-US/docs/Web/HTML",
@@ -101,7 +129,7 @@
       },
       "java": {
         "name": "Java",
-        "url": "https://www.oracle.com/java/",
+        "url": "https://oracle.com/java",
         "icon": "java.svg",
         "level": 3,
         "color": "#ED8B00"
@@ -110,19 +138,19 @@
         "name": "JavaScript",
         "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
         "icon": "javascript.svg",
-        "level": 1,
+        "level": 2,
         "color": "#F0DB4F"
       },
       "julia": {
         "name": "Julia",
-        "url": "https://julialang.org/",
+        "url": "https://julialang.org",
         "icon": "julia.svg",
         "level": 2,
         "color": "#9558B2"
       },
       "makefile": {
         "name": "Makefile",
-        "url": "https://www.gnu.org/software/make/manual/make.html",
+        "url": "https://gnu.org/software/make/manual/make.html",
         "icon": "gnu.svg",
         "level": 2,
         "color": "#427819"
@@ -136,72 +164,142 @@
       },
       "r": {
         "name": "R",
-        "url": "https://www.r-project.org/",
+        "url": "https://r-project.org",
         "icon": "r.svg",
         "level": 2,
         "color": "#276DC2"
       },
       "shell": {
         "name": "Shell",
-        "url": "https://www.gnu.org/software/bash/",
+        "url": "https://gnu.org/software/bash/",
         "icon": "bash.svg",
         "level": 3,
         "color": "#4EAA25"
       },
       "sql": {
         "name": "SQL",
-        "url": "https://www.iso.org/standard/76583.html",
+        "url": "https://iso.org/standard/76583.html",
         "icon": "postgresql.svg",
         "level": 4,
         "color": "#336791"
+      },
+      "tex": {
+        "name": "TeX",
+        "url": "https://tug.org/tex.html",
+        "icon": "tex.svg",
+        "level": 2,
+        "color": "#04652F"
+      },
+      "typescript": {
+        "name": "TypeScript",
+        "url": "https://typescriptlang.org",
+        "icon": "typescript.svg",
+        "level": 1,
+        "color": "#3178C6"
       }
     },
     "tools": {
+      "buildbot": {
+        "name": "Buildbot",
+        "url": "https://buildbot.net",
+        "icon": "buildbot.svg",
+        "level": 1,
+        "color": "#5D4B74"
+      },
+      "cypress": {
+        "name": "Cypress",
+        "url": "https://cypress.io",
+        "icon": "cypress.svg",
+        "level": 1,
+        "color": "#69D3A7"
+      },
+      "figma": {
+        "name": "Figma",
+        "url": "https://figma.com",
+        "icon": "figma.svg",
+        "level": 2,
+        "color": "#0ACF83"
+      },
+      "firebase": {
+        "name": "Firebase",
+        "url": "https://firebase.google.com",
+        "icon": "firebase.svg",
+        "level": 1,
+        "color": "#FF9100"
+      },
       "git": {
         "name": "Git",
-        "url": "https://git-scm.com/",
+        "url": "https://git-scm.com",
         "icon": "git.svg",
         "level": 4,
         "color": "#F05133"
       },
+      "github": {
+        "name": "GitHub",
+        "url": "https://github.com",
+        "icon": "github.svg",
+        "level": 4,
+        "color": "#0FBF3E"
+      },
       "intellij": {
         "name": "IntelliJ IDEA",
-        "url": "https://www.jetbrains.com/idea/",
+        "url": "https://jetbrains.com/idea",
         "icon": "intellij.svg",
         "level": 2,
         "color": "#FE2857"
       },
+      "jmeter": {
+        "name": "JMeter",
+        "url": "https://jmeter.apache.org",
+        "icon": "apache.svg",
+        "level": 1,
+        "color": "#D22128"
+      },
+      "jupyter": {
+        "name": "Jupyter",
+        "url": "https://jupyter.org",
+        "icon": "jupyter.svg",
+        "level": 3,
+        "color": "#F37726"
+      },
       "maven": {
         "name": "Maven",
-        "url": "https://maven.apache.org/",
-        "icon": "maven.svg",
+        "url": "https://maven.apache.org",
+        "icon": "apache.svg",
         "level": 3,
         "color": "#F79A23"
       },
       "obsidian": {
         "name": "Obsidian",
-        "url": "https://obsidian.md/",
+        "url": "https://obsidian.md",
         "icon": "obsidian.svg",
         "level": 2,
         "color": "#A079FF"
       },
       "postgresql": {
         "name": "PostgreSQL",
-        "url": "https://www.postgresql.org/",
+        "url": "https://postgresql.org",
         "icon": "postgresql.svg",
         "level": 4,
         "color": "#336791"
       },
       "rstudio": {
         "name": "RStudio",
-        "url": "https://posit.co/products/rstudio/",
+        "url": "https://posit.co/products/rstudio",
         "icon": "rstudio.svg",
         "level": 2,
         "color": "#75AADB"
       },
+      "spock": {
+        "name": "Spock",
+        "url": "https://spockframework.org",
+        "icon": "spock.svg",
+        "level": 1,
+        "color": "#1562AE"
+      },
       "vscode": {
         "name": "VS Code",
-        "url": "https://code.visualstudio.com/",
+        "url": "https://code.visualstudio.com",
         "icon": "vscode.svg",
         "level": 4,
         "color": "#0098FF"
@@ -227,6 +325,7 @@
     "university": [
       {
         "title": "meta-circular-evaluator",
+        "time":"Mar 2024",
         "description": "A meta-circular evaluator with reflection and metaprogramming properties for a subset of Julia",
         "url": "https://github.com/jjasferreira/meta-circular-evaluator-jl",
         "icon": "github.svg",
@@ -236,6 +335,7 @@
       },
       {
         "title": "robotruck-ufo",
+        "time":"Jun 2023",
         "description": "A scene with a robot/truck and a trailer and a scene with a UFO in the countryside",
         "url": "https://github.com/jjasferreira/robotruck-ufo-js",
         "icon": "github.svg",
@@ -245,6 +345,7 @@
       },
       {
         "title": "distributed-ledger",
+        "time":"Apr 2023",
         "description": "A distributed ledger for transactions using Protocol Buffers for service contracts and message serialization",
         "url": "https://github.com/jjasferreira/distributed-ledger",
         "icon": "github.svg",
@@ -253,7 +354,38 @@
         "tools":["maven", "intellij"]
       },
       {
+        "title": "quizzes-dashboard",
+        "time":"Apr 2023",
+        "description": "A teacher dashboard featuring offline-calculated statistics and comparative charts across courses",
+        "url": "https://github.com/jjasferreira/quizzes-dashboard",
+        "icon": "github.svg",
+        "frameworks": ["vuejs", "hibernate"],
+        "programming": ["java", "groovy", "javascript", "typescript"],
+        "tools": ["spock", "cypress", "jmeter", "buildbot"]
+      },
+      {
+        "title": "hangman-socket",
+        "time":"Dec 2022",
+        "description": "A client-server implementation of the Hangman game using sockets",
+        "url": "https://github.com/jjasferreira/hangman-socket-cpp",
+        "icon": "github.svg",
+        "frameworks": [],
+        "programming": ["cplusplus", "makefile"],
+        "tools": ["vscode"]
+      },
+      {
+        "title": "data-exploration",
+        "time":"Nov 2022",
+        "description": "A set of data analysis and programming problems of Machine Learning",
+        "url": "https://github.com/jjasferreira/data-exploration-py",
+        "icon": "github.svg",
+        "frameworks": [],
+        "programming": ["python", "tex"],
+        "tools": ["jupyter", "vscode"]
+      },
+      {
         "title": "ivm-manager",
+        "time":"Jun 2022",
         "description": "A server-side Intelligent Vending Machine manager accessible by a modern web application",
         "url": "https://github.com/jjasferreira/ivm-manager-pgsql",
         "icon": "github.svg",
@@ -262,7 +394,18 @@
         "tools": ["postgresql", "vscode"]
       },
       {
+        "title": "takuzu",
+        "time": "Jun 2022",
+        "description": "A program that solves the Takuzu problem using Artificial Intelligence search techniques",
+        "url": "https://github.com/jjasferreira/takuzu-py",
+        "icon": "github.svg",
+        "frameworks": [],
+        "programming": ["python", "shell"],
+        "tools": ["vscode"]
+      },
+      {
         "title": "probability-statistics",
+        "time":"May 2022",
         "description": "A set of probabilistic and plotting problems and resolutions using statistical computing and graphics",
         "url": "https://github.com/jjasferreira/probability-statistics-r",
         "icon": "github.svg",
@@ -271,12 +414,33 @@
         "tools": ["rstudio", "obsidian"]
       },
       {
-        "title": "takuzu",
-        "description": "A program that solves the Takuzu problem using Artificial Intelligence search techniques",
-        "url": "https://github.com/jjasferreira/takuzu-py",
+        "title": "target-selection",
+        "time":"Apr 2022",
+        "description": "A graphical experiment assessing human-computer interaction and logging performance metrics",
+        "url": "https://editor.p5js.org/joaoncardoso/sketches/J5S0QX6Nd",
+        "icon": "p5js.svg",
+        "frameworks": ["p5js"],
+        "programming": ["javascript"],
+        "tools": ["firebase"]
+      },
+      {
+        "title": "cryptoquiver",
+        "time":"Mar 2022",
+        "description": "https://www.youtube.com/watch?v=jiO3j-C4Tj4",
+        "url": "https://www.figma.com/proto/nZdml6k9GuDtTmfUEVl0QM/Cryptoquiver",
+        "icon": "figma.svg",
+        "frameworks": [],
+        "programming": [],
+        "tools": ["figma"]
+      },
+      {
+        "title": "lcis-solver",
+        "time": "Jan 2022",
+        "description": "An implementation of algorithms to solve the LIS and LCIS problems with quadratic time complexity",
+        "url": "https://github.com/joaoncardoso/ASA-cpp",
         "icon": "github.svg",
         "frameworks": [],
-        "programming": ["python", "shell"],
+        "programming": ["cplusplus", "python", "makefile"],
         "tools": ["vscode"]
       }
     ]
@@ -317,7 +481,7 @@
       "logo": "light-inesc.svg",
       "darklogo": "dark-inesc.svg",
       "logoalt": "INESC",
-      "time": "Apr 2025 · Oct 2025 · 7 mos",
+      "time": "Apr 2025 - Oct 2025 · 7 mos",
       "location": "Lisbon, Portugal · Hybrid",
       "heading": "OptiGov Project · Supervised by professor Alessandro Gianola",
       "titleurl": "https://optigov-project.github.io",
@@ -361,7 +525,7 @@
       "logo": "light-ist.svg",
       "darklogo": "dark-ist.svg",
       "logoalt": "IST",
-      "time": "Apr 2025 Jul 2025 · 4 mos",
+      "time": "Apr 2025 - Jul 2025 · 4 mos",
       "location": "Lisbon, Portugal · On-site",
       "heading": "Databases Course · Bachelor, Computer Science and Engineering",
       "titleurl": "https://fenix.tecnico.ulisboa.pt/cursos/leic-a/disciplina-curricular/845953938489547",
@@ -374,7 +538,7 @@
       "media": [
         {
           "title": "Teaching Excellence Diploma 2024/2025",
-          "url": "",
+          "url": "https://www.youtube.com/live/psVG7Cm89Ps?si=Qr2covJLH60H5dPV&t=5648",
           "icon": "FileBadge"
         }
       ]
@@ -430,11 +594,11 @@
         },
         {
           "title": "Academic Excellence Diploma 2024/2025",
-          "url": null,
+          "url": "https://www.youtube.com/live/psVG7Cm89Ps?si=6pn16C6aB28JVali&t=2729",
           "icon": "FileBadge"
         },
         {
-          "title": "Master Degree Certificate",
+          "title": "Master's Degree Certificate",
           "url": "master-degree-certificate.pdf",
           "icon": "GraduationCap"
         }
@@ -473,7 +637,7 @@
           "icon": "FileBadge"
         },
         {
-          "title": "Bachelor Degree Certificate",
+          "title": "Bachelor's Degree Certificate",
           "url": "bachelor-degree-certificate.pdf",
           "icon": "GraduationCap"
         }
@@ -512,6 +676,177 @@
           "icon": "FileBadge"
         }
       ]
+    }
+  },
+  "achievements": {
+    "ecai25": {
+      "title": "Short Paper Presenter",
+      "subtitle": "28th European Conference on Artificial Intelligence",
+      "logo": "light-ecai.png",
+      "darklogo": "dark-ecai.png",
+      "logoalt": "ECAI",
+      "time": "Oct 2025",
+      "location": "Bologna, Italy",
+      "heading": null,
+      "titleurl": "https://linkedin.com/posts/jjasferreira_overlay-ecai-softwareverification-activity-7391160894925488128-a75E?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACE4hdsBdf4b6GsJy2g01zZ-1yYxFcmgcIA",
+      "subtitleurl": null,
+      "logourl": null,
+      "headingurl": null,
+      "color": "#981711",
+      "fields": null,
+      "description": null,
+      "media": [
+        {
+          "title": "First-Order Linear Temporal Logic for Testing Distributed Protocols",
+          "url": "https://ceur-ws.org/Vol-4142/paper5.pdf",
+          "icon": "ExternalLink"
+        },
+        {
+          "title": "ECAI Attendance Certificate",
+          "url": "ecai-attendance-certificate.pdf",
+          "icon": "GraduationCap"
+        }
+      ]
+    },
+    "c2": {
+      "title": "C2 Proficient",
+      "subtitle": "Cambridge English",
+      "logo": "light-cambridge.svg",
+      "darklogo": "dark-cambridge.svg",
+      "logoalt": "CAE",
+      "time": "Jul 2020",
+      "location": "Porto, Portugal",
+      "heading": "Credential ID: B2369009",
+      "titleurl": "https://www.cambridgeenglish.org/exams-and-tests/cefr/c2-proficiency",
+      "subtitleurl": "https://cambridgeenglish.org",
+      "logourl": "https://cambridgeenglish.org",
+      "headingurl": "https://cambridgeenglish.org/educators-organisations/accept-verify-exams/higher-education-institutions/verify-results-online",
+      "color": "#E63329",
+      "fields": null,
+      "description": null,
+      "media": [
+        {
+          "title": "English Proficiency Certificate",
+          "url": "https://cambridgeenglish.org/educators-organisations/accept-verify-exams/higher-education-institutions/verify-results-online",
+          "icon": "ExternalLink"
+        }
+      ]
+    },
+    "opm16": {
+      "title": "National Finalist",
+      "subtitle": "XXXIV Portuguese Mathematics Olympiad",
+      "logo": "light-opm.png",
+      "darklogo": "dark-opm.png",
+      "logoalt": "OPM",
+      "time": "Mar 2016",
+      "location": "Paço de Arcos, Portugal",
+      "heading": null,
+      "titleurl": null,
+      "subtitleurl": "https://olimpiadas.spm.pt",
+      "logourl": null,
+      "headingurl": null,
+      "color": "#2AABCB",
+      "fields": null,
+      "description": null,
+      "media": [
+        {
+          "title": "Finalists List",
+          "url": "https://olimpiadas.spm.pt/Downloads/Ficheiros/dadosfinalistasNET2016.pdf",
+          "icon": "ExternalLink"
+        }
+      ]
+    }
+  },
+  "volunteering": {
+    "p+26": {
+      "title": "Missionary Leader",
+      "subtitle": "Projeto + 2026",
+      "time": "Apr 2026 - Present",
+      "location": "Lourinhã, Portugal",
+      "heading": null,
+      "url": "https://instagram.com/projetomais",
+      "description": null
+    },
+    "mp26": {
+      "title": "Missionary Leader",
+      "subtitle": "Missão País 2026",
+      "time": "Jul 2025 - May 2026",
+      "location": "Valpaços, Portugal",
+      "heading": null,
+      "url": "https://missaopais.pt/home",
+      "description": "Lead the team responsible for 50 young missionaries, ensuring all the logistics, prayer moments, and community service run smoothly."
+    },
+    "gjc": {
+      "title": "Member",
+      "subtitle": "Constantim's Youth Group",
+      "time": "Feb 2017 - Aug 2025",
+      "location": "Vila Real, Portugal",
+      "heading": null,
+      "url": "https://instagram.com/gjconstantim",
+      "description": null
+    },
+    "p+25": {
+      "title": "Missionary",
+      "subtitle": "Projeto + 2025",
+      "time": "Aug 2025",
+      "location": "Lourinhã, Portugal",
+      "heading": null,
+      "url": "https://instagram.com/projetomais",
+      "description": null
+    },
+    "iub25": {
+      "title": "Participant",
+      "subtitle": "Jubilee 2025",
+      "time": "Aug 2025",
+      "location": "Rome, Italy",
+      "heading": null,
+      "url": "https://iubilaeum2025.va/en.html",
+      "description": null
+    },
+    "cosrm": {
+      "title": "Spiritual Retreats and Children's Animator",
+      "subtitle": "House of Prayer Saint Raphaela Mary",
+      "time": "Mar 2025 - May 2025",
+      "location": "Palmela, Portugal",
+      "heading": null,
+      "url": "https://acieuropatlantic.org/en/what-we-do/house-of-prayer/88",
+      "description": null
+    },
+    "mp25": {
+      "title": "Missionary",
+      "subtitle": "Missão País 2025",
+      "time": "Feb 2025",
+      "location": "Valpaços, Portugal",
+      "heading": null,
+      "url": "https://missaopais.pt/home",
+      "description": null
+    },
+    "camino": {
+      "title": "Pilgrim",
+      "subtitle": "Portuguese Way of St. James",
+      "time": "Aug 2024",
+      "location": "Galicia, Spain",
+      "heading": null,
+      "url": "https://caminodesantiago.gal/en",
+      "description": null
+    },
+    "wyd2023": {
+      "title": "Diocesan Week Volunteer & WYD Participant",
+      "subtitle": "World Youth Day 2023",
+      "time": "Aug 2023",
+      "location": "Lisbon, Portugal",
+      "heading": null,
+      "url": "https://lisboa2023.org/en",
+      "description": null
+    },
+    "lpcc": {
+      "title": "Fundraiser",
+      "subtitle": "Liga Portuguesa Contra o Cancro",
+      "time": null,
+      "location": null,
+      "heading": "Health",
+      "url": "https://ligacontracancro.pt",
+      "description": null
     }
   }
 }

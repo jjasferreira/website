@@ -1,21 +1,9 @@
 <script lang="ts">
   import { Printer } from "lucide-svelte";
-  import { getThemeFromEnvironment, toggleTheme } from "../theme";
 
   function printPage() {
     if (typeof window !== "undefined" && window.print) {
-      const wasDark = getThemeFromEnvironment();
-      if (wasDark) {
-        toggleTheme();
-        setTimeout(() => {
-          window.print();
-          if (wasDark) {
-            toggleTheme();
-          }
-        }, 100);
-      } else {
-        window.print();
-      }
+      window.print();
     }
   }
 </script>

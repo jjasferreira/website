@@ -10,7 +10,8 @@
   let {
     title = "Background",
     background,
-  }: { title?: string; background: any } = $props();
+    subtitle_font = "medium",
+  }: { title?: string; background: any; subtitle_font?: string } = $props();
   import { dark } from "../theme.js";
   const icons: Record<string, any> = {
     ExternalLink,
@@ -67,7 +68,9 @@
                   {back.title}
                 </a>
               </h3>
-              <h4 class="text-sm font-medium text-black dark:text-white">
+              <h4
+                class={`text-sm text-black dark:text-white ${subtitle_font === "medium" ? "font-medium" : "font-normal"}`}
+              >
                 {#if back.subtitleurl}
                   <a
                     href={back.subtitleurl}

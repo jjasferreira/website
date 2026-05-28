@@ -40,6 +40,11 @@
       <div class="space-y-4 lg:col-span-3">
         <Background title="Experience" background={data.experience} />
         <Background title="Education" background={data.education} />
+        <Background
+          title="Achievements"
+          background={data.achievements}
+          subtitle_font="normal"
+        />
       </div>
     </div>
     <Footer name={data.fullname} />
