@@ -1,0 +1,27 @@
+{
+  "email": {
+    "title": "jjasferreira@gmail.com",
+    "url": "mailto:jjasferreira@gmail.com",
+    "icon": "Mail"
+  },
+  "location": {
+    "title": "Lisbon, Portugal",
+    "url": "https://www.google.com/search?q=Lisbon,+Portugal",
+    "icon": "MapPin"
+  },
+  "website": {
+    "title": "jjasferreira.github.io",
+    "url": "https://jjasferreira.github.io",
+    "icon": "Globe"
+  },
+  "github": {
+    "title": "jjasferreira",
+    "url": "https://www.github.com/jjasferreira",
+    "icon": "Github"
+  },
+  "linkedin": {
+    "title": "jjasferreira",
+    "url": "https://www.linkedin.com/in/jjasferreira",
+    "icon": "Linkedin"
+  }
+}

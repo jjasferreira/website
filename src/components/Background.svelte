@@ -1,4 +1,9 @@
 <script lang="ts">
+  let {
+    title = "Background",
+    background,
+  }: { title?: string; background: any } = $props();
+  import { dark } from "../theme.js";
   import {
     ExternalLink,
     FileText,
@@ -7,12 +12,6 @@
     Presentation,
   } from "lucide-svelte";
   import { Github } from "@boxicons/svelte";
-  let {
-    title = "Background",
-    background,
-    subtitle_font = "medium",
-  }: { title?: string; background: any; subtitle_font?: string } = $props();
-  import { dark } from "../theme.js";
   const icons: Record<string, any> = {
     ExternalLink,
     FileText,
@@ -68,9 +67,7 @@
                   {back.title}
                 </a>
               </h3>
-              <h4
-                class={`text-sm text-black dark:text-white ${subtitle_font === "medium" ? "font-medium" : "font-normal"}`}
-              >
+              <h4 class="text-sm text-mist-800 dark:text-mist-200 font-medium">
                 {#if back.subtitleurl}
                   <a
                     href={back.subtitleurl}

@@ -1,28 +1,16 @@
 <script lang="ts">
-  const icons = import.meta.glob("../icons/*.svg", {
-    query: "?raw",
-    import: "default",
-    eager: true,
-  });
+  let { title = "Skills" }: { title?: string } = $props();
+  import skills from "../content/skills.json";
   const sections = [
     { key: "frameworks", label: "Frameworks" },
     { key: "programming", label: "Programming" },
     { key: "tools", label: "Tools" },
   ] as const;
-
-  let {
-    title = "Skills",
-    skills,
-  }: {
-    title?: string;
-    skills: {
-      fields: string[];
-      frameworks: Record<string, any>;
-      programming: Record<string, any>;
-      tools: Record<string, any>;
-      languages: Record<string, any>;
-    };
-  } = $props();
+  const icons = import.meta.glob("../icons/*.svg", {
+    query: "?raw",
+    import: "default",
+    eager: true,
+  });
 </script>
 
 <div
@@ -31,11 +19,7 @@
   <h2 class="mb-2 text-xl font-semibold text-black dark:text-white">{title}</h2>
   <!-- Fields -->
   <div>
-    <h3
-      class="text-mist-500 text-[13px] font-medium border-mist-200 dark:border-mist-800 pb-0.75"
-    >
-      Fields
-    </h3>
+    <h3 class="text-mist-500 text-[13px] font-medium pb-0.75">Fields</h3>
     <div class="space-y-0.75 flex flex-col">
       {#each skills.fields.slice().sort() as field}
         <p class="text-xs text-mist-800 dark:text-mist-200">
@@ -48,12 +32,14 @@
   {#each sections as section}
     <div>
       <h3
-        class="text-mist-500 text-[13px] font-medium border-t border-mist-200 dark:border-mist-800 pt-1.5 pb-0.75 mt-2"
+        class="text-mist-500 text-[13px] font-medium pb-0.75 border-t border-mist-200 dark:border-mist-800 pt-1.5 mt-2"
       >
         {section.label}
       </h3>
       <div class="space-y-0.75 flex flex-col">
-        {#each Object.values(skills[section.key]).sort((a, b) => b.level - a.level) as item}
+        {#each Object.values(skills[section.key])
+          .filter((item) => item.level >= 2)
+          .sort((a, b) => b.level - a.level) as item}
           {@const icon = icons["../icons/" + item.icon]}
           <a
             href={item.url}

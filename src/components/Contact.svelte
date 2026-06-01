@@ -1,8 +1,8 @@
 <script lang="ts">
+  let { title = "Contact" }: { title?: string } = $props();
+  import contact from "../content/contact.json";
   import { Mail, MapPin, Globe } from "lucide-svelte";
   import { Github, Linkedin } from "@boxicons/svelte";
-  let { title = "Contact", contact }: { title?: string; contact: any[] } =
-    $props();
   const icons: Record<string, any> = {
     Mail,
     MapPin,
@@ -19,21 +19,21 @@
     {title}
   </h2>
   <div class="flex flex-col pt-0.75 pb-1.25">
-    {#each contact as contact}
-      {@const Icon = icons[contact.icon]}
+    {#each Object.entries(contact) as [key, item]}
+      {@const Icon = icons[item.icon]}
       <h4 class="text-sm font-medium text-mist-500">
         <a
-          href={contact.url}
+          href={item.url}
           target="_blank"
           rel="noopener noreferrer"
           class="inline-flex items-center gap-1.5 rounded-[9px] pl-1.5 pr-2 my-px py-0.75 hover:opacity-90 hover:bg-mist-100 dark:hover:bg-mist-900"
         >
           <Icon
             strokeWidth={2.25}
-            {...contact.icon === "Github" ? { removePadding: true } : {}}
+            {...item.icon === "Github" ? { removePadding: true } : {}}
             class="w-4 h-4"
           />
-          {contact.title}
+          {item.title}
         </a>
       </h4>
     {/each}

@@ -1,3 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 337 256">
-  <path d="M187.2 4L289 95.5l-37.2 124.8-139.2 33.5-101.8-91.4L48 37.5zm-3.5 72.6c32 16.7 43 53.6 24.4 82.5-18.4 28.8-59.6 38.7-91.8 22-32-16.5-43-53.6-24.4-82.4 18.3-28.9 59.4-38.9 91.7-22.2z" fill="#currentColor" fill-rule="evenodd" />
+<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" fill="none" >
+  <path d="M10.7 205.4V162.4L112.6 253.9V296.4L10.7 205.4Z" stroke="currentColor" stroke-width="5" stroke-linejoin="round" fill-rule="evenodd" clip-rule="evenodd" />
+  <path d="M112.7 254L251.7 220.3V263.5L112.7 297V254Z" stroke="currentColor" stroke-width="5" stroke-linejoin="round" fill-rule="evenodd" clip-rule="evenodd" />
+  <path d="M251.8 220.3V263.5L289 138.5V95.5L251.8 220.3Z" stroke="currentColor" stroke-width="5" stroke-linejoin="round" fill-rule="evenodd" clip-rule="evenodd" />
+  <path d="M187.2 4L289 95.5L251.8 220.3L112.6 253.8L10.8 162.4L48 37.5L187.2 4ZM183.7 76.6C215.7 93.3 226.7 130.2 208.1 159.1C189.7 187.9 148.5 197.8 116.3 181.1C84.3 164.6 73.3 127.5 91.9 98.7C110.2 69.8 151.3 59.8 183.6 76.5L183.7 76.6Z" fill="currentColor" stroke="currentColor" stroke-width="5" stroke-linejoin="round" fill-rule="evenodd" clip-rule="evenodd" />
+  <path d="M85.5 146C82.8724 138.173 82.0473 129.854 83.0862 121.663C84.1252 113.473 87.0014 105.623 91.5 98.7C110.5 69.7 151.5 59.7 183.5 76.7C211 91 223.1 120.1 214.2 146.2C208.944 130.995 197.967 118.439 183.6 111.2C151.6 95.2 110.6 104.2 91.6 133.4C89.0802 137.403 87.0649 141.702 85.6 146.2L85.5 146Z" stroke="currentColor" stroke-width="5" stroke-linejoin="round" fill-rule="evenodd" clip-rule="evenodd" />
 </svg>

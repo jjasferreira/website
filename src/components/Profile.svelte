@@ -1,5 +1,5 @@
 <script lang="ts">
-  let { data }: { data: any } = $props();
+  import profile from "../content/profile.json";
 </script>
 
 <div
@@ -10,12 +10,12 @@
   >
     <img
       src="/jjasferreira.png"
-      alt={data.name}
+      alt={profile.name}
       class="object-cover w-20 h-20 rounded-full shrink-0"
     />
-    {data.name}
+    {profile.name}
   </h1>
   <p class="py-0.5 text-xs text-mist-800 dark:text-mist-200">
-    {data.about}
+    {profile.about}
   </p>
 </div>

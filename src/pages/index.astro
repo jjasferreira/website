@@ -1,6 +1,6 @@
 ---
 import Resume from '../components/Resume.svelte';
-import data from '../content/resume.json';
+import profile from '../content/profile.json';
 import "../styles/global.css";
 ---
 
@@ -8,7 +8,7 @@ import "../styles/global.css";
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{data.name}</title>
+    <title>{profile.name}</title>
     <script is:inline>
       const storedTheme = localStorage.getItem('theme');
       const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -18,7 +18,7 @@ import "../styles/global.css";
   </head>
   <body>
     <main>
-      <Resume client:load data={data} />
+      <Resume client:load />
     </main>
   </body>
 </html>

@@ -1,7 +1,7 @@
 <script lang="ts">
+  import { dark, initializeTheme, toggleTheme } from "../theme.js";
   import { onMount } from "svelte";
   import { Sun, Moon } from "lucide-svelte";
-  import { dark, initializeTheme, toggleTheme } from "../theme.js";
 
   onMount(() => {
     initializeTheme();
