@@ -19,12 +19,12 @@
       {
         "title": "First-Order Linear Temporal Logic for Testing Distributed Protocols",
         "url": "https://ceur-ws.org/Vol-4142/paper5.pdf",
-        "icon": "ExternalLink"
+        "icon": "lucide-externallink.svg"
       },
       {
         "title": "ECAI Attendance Certificate",
         "url": "ecai-attendance-certificate.pdf",
-        "icon": "GraduationCap"
+        "icon": "lucide-graduationcap.svg"
       }
     ]
   },
@@ -48,7 +48,7 @@
       {
         "title": "English Proficiency Certificate",
         "url": "english-proficiency-certificate.pdf",
-        "icon": "GraduationCap"
+        "icon": "lucide-graduationcap.svg"
       }
     ]
   },
@@ -72,7 +72,7 @@
       {
         "title": "National Finalists List",
         "url": "https://olimpiadas.spm.pt/Downloads/Ficheiros/dadosfinalistasNET2016.pdf",
-        "icon": "ExternalLink"
+        "icon": "lucide-externallink.svg"
       }
     ]
   }

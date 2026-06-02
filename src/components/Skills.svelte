@@ -1,11 +1,7 @@
 <script lang="ts">
   let { title = "Skills" }: { title?: string } = $props();
   import skills from "../content/skills.json";
-  const sections = [
-    { key: "frameworks", label: "Frameworks" },
-    { key: "programming", label: "Programming" },
-    { key: "tools", label: "Tools" },
-  ] as const;
+  const sections = ["frameworks", "programming", "tools"] as const;
   const icons = import.meta.glob("../icons/*.svg", {
     query: "?raw",
     import: "default",
@@ -13,31 +9,34 @@
   });
 </script>
 
-<div
+<section
+  id={title.toLowerCase()}
   class="px-6 pt-4 pb-3 bg-white border-2 rounded-xl border-mist-200 dark:border-mist-800 dark:bg-mist-950"
 >
   <h2 class="mb-2 text-xl font-semibold text-black dark:text-white">{title}</h2>
   <!-- Fields -->
-  <div>
+  <div id="fields">
     <h3 class="text-mist-500 text-[13px] font-medium pb-0.75">Fields</h3>
     <div class="space-y-0.75 flex flex-col">
-      {#each skills.fields.slice().sort() as field}
+      {#each Object.values(skills.fields)
+        .slice()
+        .sort((a, b) => a.name.localeCompare(b.name)) as field}
         <p class="text-xs text-mist-800 dark:text-mist-200">
-          {field}
+          {field.name}
         </p>
       {/each}
     </div>
   </div>
   <!-- Frameworks, Programming, Tools -->
   {#each sections as section}
-    <div>
+    <div id={section}>
       <h3
-        class="text-mist-500 text-[13px] font-medium pb-0.75 border-t border-mist-200 dark:border-mist-800 pt-1.5 mt-2"
+        class="text-mist-500 text-[13px] font-medium pb-0.75 border-t border-mist-200 dark:border-mist-800 pt-1.5 mt-2 capitalize"
       >
-        {section.label}
+        {section}
       </h3>
       <div class="space-y-0.75 flex flex-col">
-        {#each Object.values(skills[section.key])
+        {#each Object.values(skills[section])
           .filter((item) => item.level >= 2)
           .sort((a, b) => b.level - a.level) as item}
           {@const icon = icons["../icons/" + item.icon]}
@@ -75,7 +74,7 @@
     </div>
   {/each}
   <!-- Languages -->
-  <div>
+  <div id="languages">
     <h3
       class="text-mist-500 text-[13px] font-medium border-t border-mist-200 dark:border-mist-800 pt-1.5 pb-0.75 mt-2"
     >
@@ -92,4 +91,4 @@
       {/each}
     </div>
   </div>
-</div>
+</section>

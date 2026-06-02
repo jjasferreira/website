@@ -3,7 +3,8 @@
   import volunteering from "../content/volunteering.json";
 </script>
 
-<div
+<section
+  id={title.toLowerCase()}
   class="px-6 pt-4 pb-3 bg-white border-2 rounded-xl border-mist-200 dark:border-mist-800 dark:bg-mist-950"
 >
   <h2 class="mb-2 text-xl font-semibold text-black dark:text-white">
@@ -85,4 +86,4 @@
       </div>
     {/each}
   </div>
-</div>
+</section>

@@ -2,7 +2,8 @@
   import profile from "../content/profile.json";
 </script>
 
-<div
+<section
+  id="profile"
   class="px-6 pt-4 pb-3 bg-white border-2 rounded-xl border-mist-200 dark:border-mist-800 dark:bg-mist-950"
 >
   <h1
@@ -18,4 +19,4 @@
   <p class="py-0.5 text-xs text-mist-800 dark:text-mist-200">
     {profile.about}
   </p>
-</div>
+</section>

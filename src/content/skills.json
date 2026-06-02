@@ -1,16 +1,36 @@
 {
-  "fields": [
-    "Automated Reasoning",
-    "Constraint Optimization",
-    "Software Verification",
-    "Formal Methods",
-    "Distributed Algorithms",
-    "Business Process Modeling",
-    "Database Management Systems",
-    "Decision Support Systems",
-    "Software Engineering",
-    "Data Science"
-  ],
+  "fields": {
+    "ar": {
+      "name": "Automated Reasoning"
+    },
+    "co": {
+      "name": "Constraint Optimization"
+    },
+    "sv": {
+      "name": "Software Verification"
+    },
+    "fm": {
+      "name": "Formal Methods"
+    },
+    "da": {
+      "name": "Distributed Algorithms"
+    },
+    "bpm": {
+      "name": "Business Process Modeling"
+    },
+    "dbms": {
+      "name": "Database Management Systems"
+    },
+    "dss": {
+      "name": "Decision Support Systems"
+    },
+    "se": {
+      "name": "Software Engineering"
+    },
+    "ds": {
+      "name": "Data Science"
+    }
+  },
   "frameworks": {
     "astro": {
       "name": "Astro",

@@ -2,26 +2,26 @@
   "email": {
     "title": "jjasferreira@gmail.com",
     "url": "mailto:jjasferreira@gmail.com",
-    "icon": "Mail"
+    "icon": "lucide-mail.svg"
   },
   "location": {
     "title": "Lisbon, Portugal",
-    "url": "https://www.google.com/search?q=Lisbon,+Portugal",
-    "icon": "MapPin"
+    "url": "https://google.com/search?q=Lisbon,+Portugal",
+    "icon": "lucide-mappin.svg"
   },
   "website": {
     "title": "jjasferreira.github.io",
     "url": "https://jjasferreira.github.io",
-    "icon": "Globe"
+    "icon": "lucide-globe.svg"
   },
   "github": {
     "title": "jjasferreira",
-    "url": "https://www.github.com/jjasferreira",
-    "icon": "Github"
+    "url": "https://github.com/jjasferreira",
+    "icon": "github.svg"
   },
   "linkedin": {
     "title": "jjasferreira",
-    "url": "https://www.linkedin.com/in/jjasferreira",
-    "icon": "Linkedin"
+    "url": "https://linkedin.com/in/jjasferreira",
+    "icon": "linkedin.svg"
   }
 }

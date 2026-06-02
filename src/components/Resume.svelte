@@ -7,16 +7,16 @@
   import Skills from "./Skills.svelte";
   import Projects from "./Projects.svelte";
   import Background from "./Background.svelte";
+  import Portfolio from "./Portfolio.svelte";
   import Volunteering from "./Volunteering.svelte";
   import Footer from "./Footer.svelte";
 
   import education from "../content/education.json";
   import experience from "../content/experience.json";
   import achievements from "../content/achievements.json";
-  import { contributions, personal, academic } from "../content/projects.json";
 </script>
 
-<div class="min-h-screen px-5 py-6 bg-mist-50 dark:bg-mist-900">
+<div class="min-h-screen p-5 bg-mist-50 dark:bg-mist-900">
   <div class="max-w-5xl mx-auto">
     <!-- First Row -->
     <div class="flex justify-center gap-4 mb-4 print:hidden">
@@ -37,9 +37,7 @@
         >
           <Contact />
           <Skills />
-          <Projects
-            projects={{ contributions: contributions, personal: personal }}
-          />
+          <Projects />
         </div>
       </div>
       <!-- Right Column -->
@@ -47,7 +45,7 @@
         <Background title="Experience" background={experience} />
         <Background title="Education" background={education} />
         <Background title="Achievements" background={achievements} />
-        <Projects projects={{ academic: academic }} />
+        <Portfolio />
         <Volunteering />
       </div>
     </div>

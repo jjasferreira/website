@@ -4,25 +4,15 @@
     background,
   }: { title?: string; background: any } = $props();
   import { dark } from "../theme.js";
-  import {
-    ExternalLink,
-    FileText,
-    FileBadge,
-    GraduationCap,
-    Presentation,
-  } from "lucide-svelte";
-  import { Github } from "@boxicons/svelte";
-  const icons: Record<string, any> = {
-    ExternalLink,
-    FileText,
-    FileBadge,
-    GraduationCap,
-    Presentation,
-    Github,
-  };
+  const icons = import.meta.glob("../icons/*.svg", {
+    query: "?raw",
+    import: "default",
+    eager: true,
+  });
 </script>
 
-<div
+<section
+  id={title.toLowerCase()}
   class="px-6 pt-4 pb-3 bg-white border-2 rounded-xl border-mist-200 dark:border-mist-800 dark:bg-mist-950"
 >
   <h2 class="mb-2 text-xl font-semibold text-black dark:text-white">
@@ -130,7 +120,7 @@
           {#if back.media}
             <div class="flex flex-wrap gap-x-3 gap-y-1 py-0.75">
               {#each back.media as media}
-                {@const Icon = icons[media.icon]}
+                {@const icon = icons["../icons/" + media.icon]}
                 {#if media.url}
                   <a
                     href={media.url}
@@ -138,14 +128,8 @@
                     rel="noopener noreferrer"
                     class="inline-flex items-center gap-1 text-[11px] font-medium text-(--darkcolor) transition hover:opacity-80 dark:text-(--lightcolor)"
                   >
-                    <div class="w-3">
-                      {#if Icon}
-                        <Icon
-                          strokeWidth={2.25}
-                          removePadding
-                          class="w-3 h-3"
-                        />
-                      {/if}
+                    <div class="w-3 h-3 [&_svg]:h-full [&_svg]:w-full">
+                      {@html icon}
                     </div>
                     <span>{media.title}</span>
                   </a>
@@ -153,14 +137,8 @@
                   <span
                     class="inline-flex items-center gap-1 text-[11px] font-medium text-(--darkcolor) dark:text-(--lightcolor)"
                   >
-                    <div class="w-3">
-                      {#if Icon}
-                        <Icon
-                          strokeWidth={2.25}
-                          removePadding
-                          class="w-3 h-3"
-                        />
-                      {/if}
+                    <div class="w-3 h-3 [&_svg]:h-full [&_svg]:w-full">
+                      {@html icon}
                     </div>
                     <span>{media.title}</span>
                   </span>
@@ -172,4 +150,4 @@
       </div>
     {/each}
   </div>
-</div>
+</section>

@@ -22,42 +22,42 @@
       {
         "title": "Exploring Formal Verification for First-Order Linear Temporal Logic Modulo Theories",
         "url": "exploring-formal-verification-for-first-order-linear-temporal-logic-modulo-theories.pdf",
-        "icon": "FileText"
+        "icon": "lucide-filetext.svg"
       },
       {
         "title": "Slides",
         "url": "exploring-formal-verification-for-first-order-linear-temporal-logic-modulo-theories-slides.pdf",
-        "icon": "Presentation"
+        "icon": "lucide-presentation.svg"
       },
       {
         "title": "Specifying and Testing Distributed Protocols with Action Temporal Logic",
         "url": "https://scholar.tecnico.ulisboa.pt/records/HYZEBk_VWzVEEi4ZK7cW2PM6t-ERrvRsA9Xu",
-        "icon": "ExternalLink"
+        "icon": "lucide-externallink.svg"
       },
       {
         "title": "Extended Abstract",
         "url": "specifying-and-testing-distributed-protocols-with-action-temporal-logic-extended-abstract.pdf",
-        "icon": "FileText"
+        "icon": "lucide-filetext.svg"
       },
       {
         "title": "Slides",
         "url": "specifying-and-testing-distributed-protocols-with-action-temporal-logic-slides.pdf",
-        "icon": "Presentation"
+        "icon": "lucide-presentation.svg"
       },
       {
         "title": "actl-checker",
-        "url": "https://github.com/jjasferreira/actl-checker",
-        "icon": "Github"
+        "url": "https://github.svg.com/jjasferreira/actl-checker",
+        "icon": "github.svg"
       },
       {
         "title": "Academic Excellence Diploma 2024/2025",
         "url": "https://www.youtube.com/live/psVG7Cm89Ps?si=6pn16C6b28JVali&t=2729",
-        "icon": "FileBadge"
+        "icon": "lucide-filebadge.svg"
       },
       {
         "title": "Master's Degree Certificate",
         "url": "master-degree-certificate.pdf",
-        "icon": "GraduationCap"
+        "icon": "lucide-graduationcap.svg"
       }
     ]
   },
@@ -81,22 +81,22 @@
       {
         "title": "Academic Merit Diploma 2020/2021",
         "url": "academic-merit-diploma-2020-2021.pdf",
-        "icon": "FileBadge"
+        "icon": "lucide-filebadge.svg"
       },
       {
         "title": "Academic Merit Diploma 2021/2022",
         "url": "academic-merit-diploma-2021-2022.pdf",
-        "icon": "FileBadge"
+        "icon": "lucide-filebadge.svg"
       },
       {
         "title": "Academic Merit Diploma 2022/2023",
         "url": "academic-merit-diploma-2022-2023.pdf",
-        "icon": "FileBadge"
+        "icon": "lucide-filebadge.svg"
       },
       {
         "title": "Bachelor's Degree Certificate",
         "url": "bachelor-degree-certificate.pdf",
-        "icon": "GraduationCap"
+        "icon": "lucide-graduationcap.svg"
       }
     ]
   },
@@ -120,17 +120,17 @@
       {
         "title": "Excellence Diploma 2017/2018",
         "url": null,
-        "icon": "FileBadge"
+        "icon": "lucide-filebadge.svg"
       },
       {
         "title": "Excellence Diploma 2018/2019",
         "url": null,
-        "icon": "FileBadge"
+        "icon": "lucide-filebadge.svg"
       },
       {
         "title": "Excellence Diploma 2019/2020",
         "url": null,
-        "icon": "FileBadge"
+        "icon": "lucide-filebadge.svg"
       }
     ]
   }

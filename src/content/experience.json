@@ -22,12 +22,12 @@
       {
         "title": "A Comparative Analysis of UNSAT Core Extraction Methodologies for Unweighted MaxSAT",
         "url": "a-comparative-analysis-of-unsat-core-extraction-methodologies-for-unweighted-maxsat.pdf",
-        "icon": "FileText"
+        "icon": "lucide-filetext.svg"
       },
       {
         "title": "maxsat-core-bench",
         "url": "https://github.com/jjasferreira/maxsat-core-bench",
-        "icon": "Github"
+        "icon": "github.svg"
       }
     ]
   },
@@ -56,22 +56,22 @@
       {
         "title": "First-Order Linear Temporal Logic for Testing Distributed Protocols",
         "url": "https://ceur-ws.org/Vol-4142/paper5.pdf",
-        "icon": "ExternalLink"
+        "icon": "lucide-externallink.svg"
       },
       {
         "title": "Slides",
         "url": "first-order-linear-temporal-logic-for-testing-distributed-protocols-slides.pdf",
-        "icon": "Presentation"
+        "icon": "lucide-presentation.svg"
       },
       {
         "title": "Application of ACTLChecker to the ICT Approval Protocol at IGFEJ as part of OptiGov",
         "url": "application-of-actlchecker-to-the-ict-approval-protocol-at-igfej-as-part-of-optigov.pdf",
-        "icon": "FileText"
+        "icon": "lucide-filetext.svg"
       },
       {
         "title": "optigov-actl-check",
         "url": "https://github.com/AlessandroGianola/optigov-actl-check",
-        "icon": "Github"
+        "icon": "github.svg"
       }
     ]
   },
@@ -98,7 +98,7 @@
       {
         "title": "Teaching Excellence Diploma 2024/2025",
         "url": "https://www.youtube.com/live/psVG7Cm89Ps?si=Qr2covJLH60H5dPV&t=5648",
-        "icon": "FileBadge"
+        "icon": "lucide-filebadge.svg"
       }
     ]
   }
