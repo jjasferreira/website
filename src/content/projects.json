@@ -89,7 +89,7 @@
     },
     "metacircular-evaluator": {
       "time": "03/24",
-      "description": "A meta-circular evaluator with reflection and advanced metaprogramming properties for a subset of Julia",
+      "description": "A meta-circular evaluator with reflection and metaprogramming properties for a subset of Julia",
       "url": "https://github.com/jjasferreira/meta-circular-evaluator-jl",
       "icon": "github.svg",
       "frameworks": [],
@@ -102,7 +102,7 @@
     },
     "eu-vehicles": {
       "time": "10/23",
-      "description": "An interactive dashboard mapping EU electric vehicle trends against socio-economic indexes and pollutant emissions",
+      "description": "A dashboard mapping EU electric vehicle trends against socio-economic indexes and pollutant emissions",
       "url": "https://github.com/jjasferreira/eu-vehicles-js",
       "icon": "github.svg",
       "frameworks": [

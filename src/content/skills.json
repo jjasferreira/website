@@ -43,7 +43,7 @@
       "name": "Bootstrap",
       "url": "https://getbootstrap.com",
       "icon": "bootstrap.svg",
-      "level": 3,
+      "level": 2,
       "color": "#712CF9"
     },
     "flask": {
@@ -57,7 +57,7 @@
       "name": "gRPC",
       "url": "https://grpc.io",
       "icon": "grpc.svg",
-      "level": 2,
+      "level": 3,
       "color": "#03B6B4"
     },
     "hibernate": {
@@ -71,7 +71,7 @@
       "name": "p5.js",
       "url": "https://p5js.org",
       "icon": "p5js.svg",
-      "level": 1,
+      "level": 0,
       "color": "#ED225D"
     },
     "sveltejs": {
@@ -85,21 +85,21 @@
       "name": "Tailwind CSS",
       "url": "https://tailwindcss.com",
       "icon": "tailwindcss.svg",
-      "level": 5,
+      "level": 4,
       "color": "#38BDF8"
     },
     "threejs": {
       "name": "Three.js",
       "url": "https://threejs.org",
       "icon": "threejs.svg",
-      "level": 3,
+      "level": 0,
       "color": "#FF0000"
     },
     "vuejs": {
       "name": "Vue.js",
       "url": "https://vuejs.org",
       "icon": "vuejs.svg",
-      "level": 1,
+      "level": 3,
       "color": "#41B883"
     }
   },
@@ -108,7 +108,7 @@
       "name": "C",
       "url": "https://iso.org/standard/74528.html",
       "icon": "c.svg",
-      "level": 3,
+      "level": 0,
       "color": "#777777"
     },
     "cplusplus": {
@@ -122,7 +122,7 @@
       "name": "CSS",
       "url": "https://developer.mozilla.org/en-US/docs/Web/CSS",
       "icon": "css.svg",
-      "level": 3,
+      "level": 2,
       "color": "#663399"
     },
     "groovy": {
@@ -136,7 +136,7 @@
       "name": "HTML",
       "url": "https://developer.mozilla.org/en-US/docs/Web/HTML",
       "icon": "html.svg",
-      "level": 3,
+      "level": 2,
       "color": "#F06529"
     },
     "java": {
@@ -157,14 +157,14 @@
       "name": "Julia",
       "url": "https://julialang.org",
       "icon": "julia.svg",
-      "level": 2,
+      "level": 0,
       "color": "#9558B2"
     },
     "makefile": {
       "name": "Makefile",
       "url": "https://gnu.org/software/make/manual/make.html",
       "icon": "gnu.svg",
-      "level": 2,
+      "level": 0,
       "color": "#427819"
     },
     "python": {
@@ -199,7 +199,7 @@
       "name": "TeX",
       "url": "https://tug.org/tex.html",
       "icon": "tex.svg",
-      "level": 2,
+      "level": 0,
       "color": "#04652F"
     },
     "typescript": {
@@ -215,35 +215,42 @@
       "name": "AWS",
       "url": "https://aws.amazon.com",
       "icon": "aws.svg",
-      "level": 2,
+      "level": 3,
       "color": "#FF9900"
     },
     "buildbot": {
       "name": "Buildbot",
       "url": "https://buildbot.net",
       "icon": "buildbot.svg",
-      "level": 1,
+      "level": 0,
       "color": "#5D4B74"
     },
     "cypress": {
       "name": "Cypress",
       "url": "https://cypress.io",
       "icon": "cypress.svg",
-      "level": 1,
+      "level": 0,
       "color": "#69D3A7"
+    },
+    "docker": {
+      "name": "Docker",
+      "url": "https://docker.com",
+      "icon": "docker.svg",
+      "level": 3,
+      "color": "#2560FF"
     },
     "figma": {
       "name": "Figma",
       "url": "https://figma.com",
       "icon": "figma.svg",
-      "level": 2,
+      "level": 0,
       "color": "#0ACF83"
     },
     "firebase": {
       "name": "Firebase",
       "url": "https://firebase.google.com",
       "icon": "firebase.svg",
-      "level": 1,
+      "level": 0,
       "color": "#FF9100"
     },
     "git": {
@@ -264,21 +271,21 @@
       "name": "IntelliJ IDEA",
       "url": "https://jetbrains.com/idea",
       "icon": "intellij.svg",
-      "level": 2,
+      "level": 0,
       "color": "#FE2857"
     },
     "jmeter": {
       "name": "JMeter",
       "url": "https://jmeter.apache.org",
       "icon": "apache.svg",
-      "level": 1,
+      "level": 0,
       "color": "#D22128"
     },
     "jupyter": {
       "name": "Jupyter",
       "url": "https://jupyter.org",
       "icon": "jupyter.svg",
-      "level": 3,
+      "level": 0,
       "color": "#F37726"
     },
     "maven": {
@@ -299,7 +306,7 @@
       "name": "Obsidian",
       "url": "https://obsidian.md",
       "icon": "obsidian.svg",
-      "level": 2,
+      "level": 0,
       "color": "#A079FF"
     },
     "postgresql": {
@@ -313,21 +320,21 @@
       "name": "RStudio",
       "url": "https://posit.co/products/rstudio",
       "icon": "rstudio.svg",
-      "level": 2,
+      "level": 1,
       "color": "#75AADB"
     },
     "spock": {
       "name": "Spock",
       "url": "https://spockframework.org",
       "icon": "spock.svg",
-      "level": 1,
+      "level": 0,
       "color": "#1562AE"
     },
     "vscode": {
       "name": "VS Code",
       "url": "https://code.visualstudio.com",
       "icon": "vscode.svg",
-      "level": 4,
+      "level": 0,
       "color": "#0098FF"
     }
   },

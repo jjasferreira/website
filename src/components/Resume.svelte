@@ -11,6 +11,8 @@
   import Volunteering from "./Volunteering.svelte";
   import Footer from "./Footer.svelte";
 
+  import contact from "../content/contact.json";
+  import profiles from "../content/profiles.json";
   import education from "../content/education.json";
   import experience from "../content/experience.json";
   import achievements from "../content/achievements.json";
@@ -35,13 +37,14 @@
         <div
           class="@container grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-1"
         >
-          <Contact />
+          <Contact {contact} />
           <Skills />
           <Projects />
+          <Contact title="Profiles" contact={profiles} />
         </div>
       </div>
       <!-- Right Column -->
-      <div class="@container space-y-4 lg:col-span-3">
+      <div class="@container space-y-4 lg:col-span-3 pb-13.75">
         <Background title="Experience" background={experience} />
         <Background title="Education" background={education} />
         <Background title="Achievements" background={achievements} />

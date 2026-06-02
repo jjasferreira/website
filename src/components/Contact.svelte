@@ -1,6 +1,11 @@
 <script lang="ts">
-  let { title = "Contact" }: { title?: string } = $props();
-  import contact from "../content/contact.json";
+  let {
+    title = "Contact",
+    contact,
+  }: {
+    title?: string;
+    contact: Record<string, { icon: string; url: string; title: string }>;
+  } = $props();
   const icons = import.meta.glob("../icons/*.svg", {
     query: "?raw",
     import: "default",

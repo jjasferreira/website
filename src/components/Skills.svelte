@@ -37,7 +37,7 @@
       </h3>
       <div class="space-y-0.75 flex flex-col">
         {#each Object.values(skills[section])
-          .filter((item) => item.level >= 2)
+          .filter((item) => item.level > 0)
           .sort((a, b) => b.level - a.level) as item}
           {@const icon = icons["../icons/" + item.icon]}
           <a
