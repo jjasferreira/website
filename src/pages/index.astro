@@ -1,7 +1,7 @@
 ---
-import Resume from '../components/Resume.svelte';
-import profile from '../content/profile.json';
-import "../styles/global.css";
+import Home from '@components/Home.svelte';
+import profile from '@content/profile.json';
+import '@styles/global.css';
 ---
 
 <html lang="en">
@@ -16,39 +16,9 @@ import "../styles/global.css";
       document.documentElement.classList.toggle('dark', useDarkTheme);
     </script>
   </head>
-  <body>
+  <body class="bg-mist-50 dark:bg-mist-900">
     <main>
-      <Resume client:load />
+      <Home client:load />
     </main>
   </body>
 </html>
-
-<style is:global>
-  @media print {
-    * {
-      -webkit-print-color-adjust: exact !important;
-      print-color-adjust: exact !important;
-    }
-  }
-</style>
-
-<script>
-  function scrollToHash() {
-    const hash = window.location.hash;
-    if (hash) {
-      const targetElement = document.getElementById(hash.substring(1));
-      if (targetElement) {
-        targetElement.scrollIntoView({ 
-          behavior: 'smooth', 
-          block: 'center'
-        });
-      }
-    }
-  }
-
-  window.addEventListener('DOMContentLoaded', () => {
-    setTimeout(scrollToHash, 100);
-  });
-
-  window.addEventListener('hashchange', scrollToHash);
-</script>

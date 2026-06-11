@@ -1,6 +1,6 @@
 <script lang="ts">
   let { title = "Volunteering" }: { title?: string } = $props();
-  import volunteering from "../content/volunteering.json";
+  import volunteering from "@content/volunteering.json";
 </script>
 
 <section
@@ -26,13 +26,7 @@
               <h3
                 class="pb-0.5 text-sm font-semibold text-mist-800 dark:text-mist-200"
               >
-                <a
-                  href={volunteer.titleurl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {volunteer.title}
-                </a>
+                {volunteer.title}
               </h3>
               <h4
                 class="text-[13px] text-mist-600 dark:text-mist-400 font-medium"

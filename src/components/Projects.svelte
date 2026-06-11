@@ -1,12 +1,12 @@
 <script lang="ts">
   let { title = "Projects" }: { title?: string } = $props();
-  import { contributions, personal } from "../content/projects.json";
-  import skills from "../content/skills.json";
+  import { contributions, personal } from "@content/projects.json";
+  import skills from "@content/skills.json";
   const projects = {
     contributions: contributions,
     personal: personal,
   };
-  const icons = import.meta.glob("../icons/*.svg", {
+  const icons = import.meta.glob("../assets/icons/tech/*.svg", {
     query: "?raw",
     import: "default",
     eager: true,
@@ -29,7 +29,7 @@
         {section}
       </h3>
       {#each Object.entries(subprojects as Record<string, any>) as [title, project], j}
-        {@const icon = icons["../icons/" + project.icon]}
+        {@const icon = icons["../assets/icons/tech/" + project.icon]}
         <div
           class="border-mist-200 dark:border-mist-800 pb-1.5 {j === 0
             ? 'border-t-0 pt-0'
@@ -37,7 +37,7 @@
         >
           <!-- Title -->
           <div
-            class="flex justify-between items-center text-black dark:text-white"
+            class="flex items-center justify-between text-black dark:text-white"
           >
             <a
               href={project.url}
@@ -64,7 +64,7 @@
               {#each ["frameworks", "programming", "tools"] as sec}
                 {#each project[sec] ?? [] as tech}
                   {@const item = (skills as any)[sec][tech]}
-                  {@const icon = icons["../icons/" + item.icon]}
+                  {@const icon = icons["../assets/icons/tech/" + item.icon]}
                   <div
                     style=" --color: {item.color};
                     --lightcolor: color-mix({item.color}, white 30%);
@@ -75,6 +75,7 @@
                       href={item.url}
                       target="_blank"
                       rel="noopener noreferrer"
+                      aria-label={item.name}
                       class="flex items-center gap-1 transition hover:text-(--darkcolor) dark:hover:text-(--lightcolor) font-medium"
                     >
                       <div

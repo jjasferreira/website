@@ -1,13 +1,43 @@
 # jjasferreira.github.io
 
-Install:
+My continuously in progress personal website
 
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/jjasferreira/jjasferreira.github.io
+cd jjasferreira.github.io
+```
+
+### 2. Install dependencies
 ```bash
 npm install
 ```
 
-Run dev server:
-
+### 3. Run the development server
 ```bash
 npm run dev
 ```
+The site will be running locally at http://localhost:4321/.
+
+### 4. Build for production
+```bash
+npm run build
+```
+This will generate the static build files in the `dist/` directory.
+
+You can preview the production build locally with:
+```bash
+npm run preview
+```
+
+---
+
+## 🛠️ Tech Stack
+
+* [Astro](https://astro.build/) for fast, static performance
+* [Svelte](https://svelte.dev/) for components and interactive elements
+* [Tailwind CSS](https://tailwindcss.com/) for styling

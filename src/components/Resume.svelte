@@ -1,57 +1,142 @@
 <script lang="ts">
-  import Theme from "./Theme.svelte";
-  import Print from "./Print.svelte";
-  import Code from "./Code.svelte";
-  import Profile from "./Profile.svelte";
-  import Contact from "./Contact.svelte";
-  import Skills from "./Skills.svelte";
-  import Projects from "./Projects.svelte";
-  import Background from "./Background.svelte";
-  import Portfolio from "./Portfolio.svelte";
-  import Volunteering from "./Volunteering.svelte";
-  import Footer from "./Footer.svelte";
+  import Button from "@components/Button.svelte";
+  import Theme from "@components/Theme.svelte";
+  import Profile from "@components/Profile.svelte";
+  import Contact from "@components/Contact.svelte";
+  import Skills from "@components/Skills.svelte";
+  import Projects from "@components/Projects.svelte";
+  import History from "@components/History.svelte";
+  import Portfolio from "@components/Portfolio.svelte";
+  import Volunteering from "@components/Volunteering.svelte";
+  import Footer from "@components/Footer.svelte";
 
-  import contact from "../content/contact.json";
-  import profiles from "../content/profiles.json";
-  import education from "../content/education.json";
-  import experience from "../content/experience.json";
-  import achievements from "../content/achievements.json";
+  import contact from "@content/contact.json";
+  import profiles from "@content/profiles.json";
+  import education from "@content/education.json";
+  import experience from "@content/experience.json";
+  import achievements from "@content/achievements.json";
+
+  import arrowleft from "@assets/icons/ui/arrowleft.svg?raw";
+  import printer from "@assets/icons/ui/printer.svg?raw";
+  import codexml from "@assets/icons/ui/codexml.svg?raw";
+
+  function printPage() {
+    if (typeof window !== "undefined" && window.print) {
+      window.print();
+    }
+  }
 </script>
 
 <div class="min-h-screen p-5 bg-mist-50 dark:bg-mist-900">
-  <div class="max-w-5xl mx-auto">
-    <!-- First Row -->
-    <div class="flex justify-center gap-4 mb-4 print:hidden">
-      <Print />
-      <Code />
-      <Theme />
+  <div class="max-w-5xl mx-auto space-y-4">
+    <!-- Action Buttons -->
+    <div class="relative flex justify-center gap-4 print:hidden">
+      <div class="absolute left-0">
+        <Button
+          id="back"
+          ariaLabel="Go back"
+          icon={arrowleft}
+          title="Go back"
+          titleClass="hidden lg:block"
+          onclick={() => window.location.assign("/")}
+        />
+      </div>
+      <Theme iconClass="p-px" />
+      <div class="absolute right-0 flex gap-4">
+        <Button
+          id="code"
+          ariaLabel="View source code"
+          icon={codexml}
+          title="View source code"
+          titleClass="hidden lg:block"
+          onclick={() =>
+            window.open(
+              "https://github.com/jjasferreira/jjasferreira.github.io",
+              "_blank",
+              "noopener,noreferrer",
+            )}
+        />
+        <Button
+          id="print"
+          ariaLabel="Print resume"
+          icon={printer}
+          iconClass="p-px"
+          title="Print resume"
+          titleClass="hidden lg:block"
+          onclick={printPage}
+        />
+      </div>
     </div>
-    <div class="mb-4 space-y-4">
-      <Profile />
-    </div>
-    <!-- Second Row -->
-    <div class="grid grid-cols-1 gap-4 lg:grid-cols-4">
-      <!-- Left Column -->
-      <div class="space-y-4 lg:col-span-1">
-        <!-- First Row -->
-        <div
-          class="@container grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-1"
-        >
+
+    <Profile />
+
+    <!-- lg--- -->
+    <div class="hidden lg:block space-y-4">
+      <div class="grid gap-4 grid-cols-4">
+        <div class="space-y-4 col-span-1">
           <Contact {contact} />
           <Skills />
           <Projects />
           <Contact title="Profiles" contact={profiles} />
         </div>
-      </div>
-      <!-- Right Column -->
-      <div class="@container space-y-4 lg:col-span-3 pb-13.75">
-        <Background title="Experience" background={experience} />
-        <Background title="Education" background={education} />
-        <Background title="Achievements" background={achievements} />
-        <Portfolio />
-        <Volunteering />
+        <div class="space-y-4 col-span-3">
+          <History title="Experience" history={experience} />
+          <History title="Education" history={education} />
+          <History title="Achievements" history={achievements} />
+          <Portfolio />
+          <Volunteering />
+        </div>
       </div>
     </div>
+
+    <!-- md-lg -->
+    <div class="hidden md:block lg:hidden space-y-4">
+      <div class="grid grid-cols-3 gap-4">
+        <div class="space-y-4">
+          <Contact {contact} />
+          <Contact title="Profiles" contact={profiles} />
+        </div>
+        <Skills />
+        <div class="space-y-4">
+          <Projects />
+        </div>
+      </div>
+      <History title="Experience" history={experience} />
+      <History title="Education" history={education} />
+      <History title="Achievements" history={achievements} />
+      <Portfolio />
+      <Volunteering />
+    </div>
+
+    <!-- sm-md -->
+    <div class="hidden sm:block md:hidden space-y-4">
+      <div class="grid grid-cols-2 gap-4">
+        <div class="space-y-4">
+          <Contact contact={{ ...contact, ...profiles }} />
+          <Projects />
+        </div>
+        <Skills />
+      </div>
+      <History title="Experience" history={experience} />
+      <History title="Education" history={education} />
+      <History title="Achievements" history={achievements} />
+      <Portfolio />
+      <Volunteering />
+    </div>
+
+    <!-- ---sm -->
+    <div class="block sm:hidden space-y-4">
+      <Contact {contact} />
+      <Skills />
+      <History title="Experience" history={experience} />
+      <Projects />
+      <History title="Education" history={education} />
+      <History title="Achievements" history={achievements} />
+      <Portfolio />
+      <Volunteering />
+      <Contact title="Profiles" contact={profiles} />
+    </div>
+
     <Footer />
   </div>
 </div>

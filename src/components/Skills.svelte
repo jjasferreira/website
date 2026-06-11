@@ -1,8 +1,8 @@
 <script lang="ts">
   let { title = "Skills" }: { title?: string } = $props();
-  import skills from "../content/skills.json";
+  import skills from "@content/skills.json";
   const sections = ["frameworks", "programming", "tools"] as const;
-  const icons = import.meta.glob("../icons/*.svg", {
+  const icons = import.meta.glob("../assets/icons/tech/*.svg", {
     query: "?raw",
     import: "default",
     eager: true,
@@ -14,16 +14,23 @@
   class="px-6 pt-4 pb-3 bg-white border-2 rounded-xl border-mist-200 dark:border-mist-800 dark:bg-mist-950"
 >
   <h2 class="mb-2 text-xl font-semibold text-black dark:text-white">{title}</h2>
-  <!-- Fields -->
-  <div id="fields">
-    <h3 class="text-mist-500 text-[13px] font-medium pb-0.75">Fields</h3>
+  <!-- Concepts -->
+  <div id="concepts">
+    <h3 class="text-mist-500 text-[13px] font-medium pb-0.75">Concepts</h3>
     <div class="space-y-0.75 flex flex-col">
-      {#each Object.values(skills.fields)
+      {#each Object.values(skills.concepts)
         .slice()
-        .sort((a, b) => a.name.localeCompare(b.name)) as field}
-        <p class="text-xs text-mist-800 dark:text-mist-200">
-          {field.name}
-        </p>
+        .sort((a, b) => a.name.localeCompare(b.name)) as concept}
+        <a
+          href={concept.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover:opacity-80"
+        >
+          <p class="text-xs text-mist-800 dark:text-mist-200">
+            {concept.name}
+          </p>
+        </a>
       {/each}
     </div>
   </div>
@@ -39,7 +46,7 @@
         {#each Object.values(skills[section])
           .filter((item) => item.level > 0)
           .sort((a, b) => b.level - a.level) as item}
-          {@const icon = icons["../icons/" + item.icon]}
+          {@const icon = icons["../assets/icons/tech/" + item.icon]}
           <a
             href={item.url}
             target="_blank"

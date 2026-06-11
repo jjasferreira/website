@@ -2,8 +2,7 @@
   "cmu": {
     "title": "Visiting Scholar",
     "subtitle": "Carnegie Mellon University",
-    "logo": "light-cmu.svg",
-    "darklogo": "dark-cmu.svg",
+    "logo": "cmu.svg",
     "logoalt": "CMU",
     "time": "Nov 2025 - Dec 2025 · 2 mos",
     "location": "Pittsburgh, Pennsylvania, United States · On-site",
@@ -13,29 +12,25 @@
     "logourl": "https://www.cmu.edu",
     "headingurl": "https://cmuportugal.org/media/cmu-portugal-to-host-12-visiting-research-scholars-at-carnegie-mellon-in-2025",
     "color": "#C41230",
-    "fields": [
-      "Automated Reasoning",
-      "Constraint Optimization"
-    ],
+    "concepts": ["ar", "co"],
     "description": "Benchmarked two unsatisfiable core extraction methodologies for unweighted MaxSAT. Using the MSU3 algorithm and the Glucose 3 solver via PySAT, we compared the lower bound precision and core minimality of internal solver assumptions against external resolution proof processing with DRAT-trim.",
     "media": [
       {
         "title": "A Comparative Analysis of UNSAT Core Extraction Methodologies for Unweighted MaxSAT",
         "url": "a-comparative-analysis-of-unsat-core-extraction-methodologies-for-unweighted-maxsat.pdf",
-        "icon": "lucide-filetext.svg"
+        "icon": "ui/filetext.svg"
       },
       {
         "title": "maxsat-core-bench",
         "url": "https://github.com/jjasferreira/maxsat-core-bench",
-        "icon": "github.svg"
+        "icon": "tech/github.svg"
       }
     ]
   },
   "inesc": {
     "title": "Research Assistant",
     "subtitle": "INESC-ID",
-    "logo": "light-inesc.svg",
-    "darklogo": "dark-inesc.svg",
+    "logo": "inesc.svg",
     "logoalt": "INESC",
     "time": "Apr 2025 - Oct 2025 · 7 mos",
     "location": "Lisbon, Portugal · Hybrid",
@@ -45,41 +40,35 @@
     "logourl": "https://www.inesc-id.pt",
     "headingurl": "https://optigov-project.github.io",
     "color": "#83B035",
-    "fields": [
-      "Software Verification",
-      "Formal Methods",
-      "Distributed Algorithms",
-      "Business Process Modeling"
-    ],
+    "concepts": ["sv", "fm", "da", "bpm"],
     "description": "Applied ACTLChecker to validate a rigorous implementation of the BPMN of the ICT Approval Protocol at IGFEJ, a public body under the Portuguese Ministry of Justice, by checking concurrent logs against property specifications in Action Temporal Logic, a formalism created in my master's thesis.",
     "media": [
       {
         "title": "First-Order Linear Temporal Logic for Testing Distributed Protocols",
         "url": "https://ceur-ws.org/Vol-4142/paper5.pdf",
-        "icon": "lucide-externallink.svg"
+        "icon": "ui/externallink.svg"
       },
       {
         "title": "Slides",
         "url": "first-order-linear-temporal-logic-for-testing-distributed-protocols-slides.pdf",
-        "icon": "lucide-presentation.svg"
+        "icon": "ui/presentation.svg"
       },
       {
         "title": "Application of ACTLChecker to the ICT Approval Protocol at IGFEJ as part of OptiGov",
         "url": "application-of-actlchecker-to-the-ict-approval-protocol-at-igfej-as-part-of-optigov.pdf",
-        "icon": "lucide-filetext.svg"
+        "icon": "ui/filetext.svg"
       },
       {
         "title": "optigov-actl-check",
         "url": "https://github.com/AlessandroGianola/optigov-actl-check",
-        "icon": "github.svg"
+        "icon": "tech/github.svg"
       }
     ]
   },
   "ist": {
     "title": "Teaching Assistant",
     "subtitle": "Instituto Superior Técnico",
-    "logo": "light-ist.svg",
-    "darklogo": "dark-ist.svg",
+    "logo": "ist.svg",
     "logoalt": "IST",
     "time": "Apr 2025 - Jul 2025 · 4 mos",
     "location": "Lisbon, Portugal · On-site",
@@ -89,16 +78,13 @@
     "logourl": "https://tecnico.ulisboa.pt",
     "headingurl": "https://fenix.tecnico.ulisboa.pt/cursos/leic-a/disciplina-curricular/845953938489547",
     "color": "#009DE0",
-    "fields": [
-      "Database Management Systems",
-      "Decision Support Systems"
-    ],
+    "concepts": ["dbms", "dss"],
     "description": "Instructed lab sessions and coordinated student groups in the design of relational databases, guiding entity-relationship modeling, schema normalization, transaction processing, and concurrency control while providing technical support for SQL implementation, project evaluation, and exam proctoring.",
     "media": [
       {
         "title": "Teaching Excellence Diploma 2024/2025",
         "url": "https://www.youtube.com/live/psVG7Cm89Ps?si=Qr2covJLH60H5dPV&t=5648",
-        "icon": "lucide-filebadge.svg"
+        "icon": "ui/filebadge.svg"
       }
     ]
   }

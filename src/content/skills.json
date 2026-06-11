@@ -1,34 +1,54 @@
 {
-  "fields": {
+  "concepts": {
     "ar": {
-      "name": "Automated Reasoning"
+      "name": "Automated Reasoning",
+      "ccs": "Theory of computation → Logic → Automated reasoning",
+      "url": "https://vocabularyserver.com/acm/12/?tema=4375"
     },
     "co": {
-      "name": "Constraint Optimization"
+      "name": "Constraint Optimization",
+      "ccs": "Theory of computation → Logic → Constraint and logic programming",
+      "url": "https://vocabularyserver.com/acm/12/?tema=4376"
     },
     "sv": {
-      "name": "Software Verification"
+      "name": "Software Verification",
+      "ccs": "Software and its engineering → Software organization and properties → Software functional properties → Formal methods → Software verification",
+      "url": "https://vocabularyserver.com/acm/12/?tema=7403"
     },
     "fm": {
-      "name": "Formal Methods"
+      "name": "Formal Methods",
+      "ccs": "Software and its engineering → Software organization and properties → Software functional properties → Formal methods",
+      "url": "https://vocabularyserver.com/acm/12/?tema=7402"
     },
     "da": {
-      "name": "Distributed Algorithms"
+      "name": "Distributed Algorithms",
+      "ccs": "Theory of computation → Design and analysis of algorithms → Distributed algorithms",
+      "url": "https://vocabularyserver.com/acm/12/?tema=4539"
     },
     "bpm": {
-      "name": "Business Process Modeling"
+      "name": "Business Process Modeling",
+      "ccs": "Applied computing → Enterprise computing → Business process management → Business process modeling",
+      "url": "https://vocabularyserver.com/acm/12/?tema=5590"
     },
     "dbms": {
-      "name": "Database Management Systems"
+      "name": "Database Management Systems",
+      "ccs": "Information systems → Data management systems → Database management system engines",
+      "url": "https://vocabularyserver.com/acm/12/?tema=715"
     },
     "dss": {
-      "name": "Decision Support Systems"
+      "name": "Decision Support Systems",
+      "ccs": "Information systems → Information systems applications → Decision support systems",
+      "url": "https://vocabularyserver.com/acm/12/?tema=1292"
     },
     "se": {
-      "name": "Software Engineering"
+      "name": "Software Engineering",
+      "ccs": "Software and its engineering",
+      "url": "https://vocabularyserver.com/acm/12/?tema=7203"
     },
     "ds": {
-      "name": "Data Science"
+      "name": "Data Science",
+      "ccs": "Computing methodologies → Machine learning → Learning paradigms",
+      "url": "https://vocabularyserver.com/acm/12/?tema=5153"
     }
   },
   "frameworks": {
