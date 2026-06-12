@@ -9,7 +9,7 @@
   <div class="flex gap-5">
     <div class="w-28 h-full overflow-hidden rounded-full mt-2 items-stretch">
       <img
-        src={"/images/" + profile.avatar}
+        src={"../images/" + profile.avatar}
         alt={profile.name}
         class="w-full h-full object-cover transition-transform duration-300 ease-in-out hover:scale-110"
       />
