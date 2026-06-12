@@ -1,7 +1,7 @@
 <script lang="ts">
   let { iconClass }: { iconClass?: string } = $props();
-  import sun from "@assets/icons/ui/sun.svg?raw";
-  import moon from "@assets/icons/ui/moon.svg?raw";
+  import sun from "@icons/ui/sun.svg?raw";
+  import moon from "@icons/ui/moon.svg?raw";
   import { dark, initializeTheme, toggleTheme } from "../theme.js";
   import { onMount } from "svelte";
 

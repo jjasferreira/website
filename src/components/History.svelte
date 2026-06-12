@@ -3,7 +3,7 @@
     $props();
   import { concepts } from "@content/skills.json";
   import { dark } from "../theme.js";
-  const icons = import.meta.glob("../assets/icons/**/*.svg", {
+  const icons = import.meta.glob("../icons/**/*.svg", {
     query: "?raw",
     import: "default",
     eager: true,
@@ -34,8 +34,8 @@
               <img
                 class="h-12 w-12 rounded-lg object-contain transition hover:opacity-80 dark:bg-(--darkcolor)/90"
                 src={$dark
-                  ? "../src/assets/logos/dark/" + hist.logo
-                  : "../src/assets/logos/light/" + hist.logo}
+                  ? "images/dark/" + hist.logo
+                  : "images/light/" + hist.logo}
                 alt={hist.logoalt}
               />
             </a>
@@ -130,10 +130,10 @@
           {#if hist.media}
             <div class="flex flex-wrap gap-x-3 gap-y-1 py-0.75">
               {#each hist.media as media}
-                {@const icon = icons["../assets/icons/" + media.icon]}
+                {@const icon = icons["../icons/" + media.icon]}
                 {#if media.url}
                   <a
-                    href={media.url}
+                    href={"docs/" + media.url}
                     target="_blank"
                     rel="noopener noreferrer"
                     class="inline-flex items-center gap-1 text-[11px] font-medium text-(--darkcolor) transition hover:opacity-80 dark:text-(--lightcolor)"

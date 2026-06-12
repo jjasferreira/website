@@ -5,7 +5,7 @@
   const projects: Record<string, any> = {
     academic: academic,
   };
-  const icons = import.meta.glob("../assets/icons/tech/*.svg", {
+  const icons = import.meta.glob("../icons/tech/*.svg", {
     query: "?raw",
     import: "default",
     eager: true,
@@ -60,7 +60,7 @@
           >
             {#each page as id}
               {@const project = sectionprojects[id]}
-              {@const icon = icons["../assets/icons/tech/" + project.icon]}
+              {@const icon = icons["../icons/tech/" + project.icon]}
               <div
                 class="border-mist-200 dark:border-mist-800 nth-[+n+4]:border-t nth-[+n+4]:pt-2
               not-nth-[3n+1]:border-l px-3 nth-[3n+1]:pl-0 nth-[3n]:pr-0"
@@ -92,8 +92,7 @@
                     {#each ["frameworks", "programming", "tools"] as sec}
                       {#each project[sec] ?? [] as tech}
                         {@const item = (skills as any)[sec][tech]}
-                        {@const icon =
-                          icons["../assets/icons/tech/" + item.icon]}
+                        {@const icon = icons["../icons/tech/" + item.icon]}
                         <div
                           style=" --color: {item.color};
                         --lightcolor: color-mix({item.color}, white 30%);

@@ -6,7 +6,7 @@
     title?: string;
     contact: Record<string, { icon: string; url: string; title: string }>;
   } = $props();
-  const icons = import.meta.glob("../assets/icons/**/*.svg", {
+  const icons = import.meta.glob("../icons/**/*.svg", {
     query: "?raw",
     import: "default",
     eager: true,
@@ -22,7 +22,7 @@
   </h2>
   <div class="flex flex-col pt-0.75 pb-1.25">
     {#each Object.entries(contact) as [, item]}
-      {@const icon = icons["../assets/icons/" + item.icon]}
+      {@const icon = icons["../icons/" + item.icon]}
       <h4 class="text-sm font-medium text-mist-500">
         <a
           href={item.url}

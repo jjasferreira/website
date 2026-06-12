@@ -16,9 +16,10 @@
   import experience from "@content/experience.json";
   import achievements from "@content/achievements.json";
 
-  import arrowleft from "@assets/icons/ui/arrowleft.svg?raw";
-  import printer from "@assets/icons/ui/printer.svg?raw";
-  import codexml from "@assets/icons/ui/codexml.svg?raw";
+  import arrowleft from "@icons/ui/arrowleft.svg?raw";
+  import house from "@icons/ui/house.svg?raw";
+  import printer from "@icons/ui/printer.svg?raw";
+  import codexml from "@icons/ui/codexml.svg?raw";
 
   function printPage() {
     if (typeof window !== "undefined" && window.print) {
@@ -34,9 +35,10 @@
       <div class="absolute left-0">
         <Button
           id="back"
-          ariaLabel="Go back"
-          icon={arrowleft}
-          title="Go back"
+          ariaLabel="Go home"
+          icon={house}
+          iconClass="p-px"
+          title="Go home"
           titleClass="hidden lg:block"
           onclick={() => window.location.assign("/")}
         />

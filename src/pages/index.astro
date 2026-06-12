@@ -1,24 +1,8 @@
 ---
+import Layout from '@layouts/Layout.astro';
 import Home from '@components/Home.svelte';
-import profile from '@content/profile.json';
-import '@styles/global.css';
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{profile.name}</title>
-    <script is:inline>
-      const storedTheme = localStorage.getItem('theme');
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      const useDarkTheme = storedTheme ? storedTheme === 'dark' : prefersDark;
-      document.documentElement.classList.toggle('dark', useDarkTheme);
-    </script>
-  </head>
-  <body class="bg-mist-50 dark:bg-mist-900">
-    <main>
-      <Home client:load />
-    </main>
-  </body>
-</html>
+<Layout>
+  <Home client:load />
+</Layout>

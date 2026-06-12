@@ -6,7 +6,7 @@
     contributions: contributions,
     personal: personal,
   };
-  const icons = import.meta.glob("../assets/icons/tech/*.svg", {
+  const icons = import.meta.glob("../icons/tech/*.svg", {
     query: "?raw",
     import: "default",
     eager: true,
@@ -29,7 +29,7 @@
         {section}
       </h3>
       {#each Object.entries(subprojects as Record<string, any>) as [title, project], j}
-        {@const icon = icons["../assets/icons/tech/" + project.icon]}
+        {@const icon = icons["../icons/tech/" + project.icon]}
         <div
           class="border-mist-200 dark:border-mist-800 pb-1.5 {j === 0
             ? 'border-t-0 pt-0'
@@ -64,7 +64,7 @@
               {#each ["frameworks", "programming", "tools"] as sec}
                 {#each project[sec] ?? [] as tech}
                   {@const item = (skills as any)[sec][tech]}
-                  {@const icon = icons["../assets/icons/tech/" + item.icon]}
+                  {@const icon = icons["../icons/tech/" + item.icon]}
                   <div
                     style=" --color: {item.color};
                     --lightcolor: color-mix({item.color}, white 30%);

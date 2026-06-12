@@ -2,7 +2,7 @@
   let { title = "Skills" }: { title?: string } = $props();
   import skills from "@content/skills.json";
   const sections = ["frameworks", "programming", "tools"] as const;
-  const icons = import.meta.glob("../assets/icons/tech/*.svg", {
+  const icons = import.meta.glob("../icons/tech/*.svg", {
     query: "?raw",
     import: "default",
     eager: true,
@@ -46,7 +46,7 @@
         {#each Object.values(skills[section])
           .filter((item) => item.level > 0)
           .sort((a, b) => b.level - a.level) as item}
-          {@const icon = icons["../assets/icons/tech/" + item.icon]}
+          {@const icon = icons["../icons/tech/" + item.icon]}
           <a
             href={item.url}
             target="_blank"
