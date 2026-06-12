@@ -34,8 +34,8 @@
               <img
                 class="h-12 w-12 rounded-lg object-contain transition hover:opacity-80 dark:bg-(--darkcolor)/90"
                 src={$dark
-                  ? "images/dark/" + hist.logo
-                  : "images/light/" + hist.logo}
+                  ? "/images/dark/" + hist.logo
+                  : "/images/light/" + hist.logo}
                 alt={hist.logoalt}
               />
             </a>
