@@ -5,10 +5,10 @@
 
 <footer
   id="footer"
-  class="flex flex-col gap-2 pt-3 mt-6 text-xs border-t border-mist-200 dark:border-mist-800 text-mist-500 sm:flex-row sm:items-center sm:justify-between print:hidden"
+  class="flex pt-3 mt-5 text-xs border-t border-mist-200 dark:border-mist-800 text-mist-500 justify-between print:hidden"
 >
-  <a href="/" class="hover:underline">
+  <a href="/" class="hover:underline px-1">
     {profile.fullname}
   </a>
-  <span>© {year}</span>
+  <span class="px-1">© {year}</span>
 </footer>

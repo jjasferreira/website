@@ -1,8 +1,8 @@
 <script lang="ts">
-  let { title = "History", history }: { title?: string; history: any } =
-    $props();
   import { concepts } from "@content/skills.json";
   import { dark } from "../theme.js";
+  let { title = "History", history }: { title?: string; history: any } =
+    $props();
   const icons = import.meta.glob("../icons/**/*.svg", {
     query: "?raw",
     import: "default",
@@ -23,30 +23,26 @@
         style=" --color: {hist.color};
                         --lightcolor: color-mix({hist.color}, white 20%);
                         --darkcolor: color-mix(in srgb, {hist.color}, black 10%)"
-        class={i === 0
-          ? "flex flex-row gap-3 pt-1.5"
-          : "mt-2 flex flex-row gap-3 border-t border-mist-200 dark:border-mist-800 pt-2"}
+        class={`flex flex-col sm:flex-row sm:gap-3 ${
+          i === 0
+            ? "pt-1"
+            : "mt-2 border-t border-mist-200 dark:border-mist-800 pt-2"
+        }`}
       >
-        <!-- Logo -->
-        {#if hist.logo}
-          <div class="shrink-0">
+        <div class="shrink-0 gap-3 flex">
+          {#if hist.logo}
             <a href={hist.logourl} target="_blank" rel="noopener noreferrer">
               <img
-                class="h-12 w-12 rounded-lg object-contain transition hover:opacity-80 dark:bg-(--darkcolor)/90"
+                class="mb-1 shrink-0 h-12 min-w-12 max-w-12 rounded-lg object-contain transition hover:opacity-80 dark:bg-(--darkcolor)/90"
                 src={$dark
                   ? "../images/dark/" + hist.logo
                   : "../images/light/" + hist.logo}
                 alt={hist.logoalt}
               />
             </a>
-          </div>
-        {/if}
-        <div class="min-w-0 grow">
-          <!-- Title, subtitle, time, location -->
-          <div
-            class="flex flex-col sm:flex-row sm:items-center sm:justify-between"
-          >
-            <div>
+          {/if}
+          <div class="flex flex-col sm:hidden justify-center">
+            {#if hist.title}
               <h3
                 class="text-base font-semibold text-black transition dark:text-white hover:opacity-80"
               >
@@ -58,8 +54,44 @@
                   {hist.title}
                 </a>
               </h3>
+            {/if}
+            {#if hist.subtitle}
               <h4 class="text-sm font-medium text-mist-800 dark:text-mist-200">
-                {#if hist.subtitleurl}
+                <a
+                  href={hist.subtitleurl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="transition hover:opacity-80"
+                >
+                  {hist.subtitle}
+                </a>
+              </h4>
+            {/if}
+          </div>
+        </div>
+        <div class="min-w-0 grow">
+          <!-- Title, subtitle, time, location -->
+          <div
+            class="flex flex-col sm:flex-row sm:items-center sm:justify-between"
+          >
+            <div class="hidden sm:flex flex-col justify-center">
+              {#if hist.title}
+                <h3
+                  class="text-base font-semibold text-black transition dark:text-white hover:opacity-80"
+                >
+                  <a
+                    href={hist.titleurl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {hist.title}
+                  </a>
+                </h3>
+              {/if}
+              {#if hist.subtitle}
+                <h4
+                  class="text-sm font-medium text-mist-800 dark:text-mist-200"
+                >
                   <a
                     href={hist.subtitleurl}
                     target="_blank"
@@ -68,16 +100,18 @@
                   >
                     {hist.subtitle}
                   </a>
-                {:else}
-                  {hist.subtitle}
-                {/if}
-              </h4>
+                </h4>
+              {/if}
             </div>
-            <div class="text-sm text-mist-500 sm:text-right">
-              <h5 class="sm:pt-1">
-                {hist.time}
-              </h5>
-              <h5>{hist.location}</h5>
+            <div class="justify-center text-sm text-mist-500 sm:text-right">
+              {#if hist.time}
+                <h5 class="sm:pt-1">
+                  {hist.time}
+                </h5>
+              {/if}
+              {#if hist.location}
+                <h5>{hist.location}</h5>
+              {/if}
             </div>
           </div>
           <!-- Heading -->

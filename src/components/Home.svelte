@@ -3,7 +3,6 @@
   import Card from "@components/Card.svelte";
   import Button from "@components/Button.svelte";
   import Footer from "@components/Footer.svelte";
-
   import fileuser from "@icons/ui/fileuser.svg?raw";
 </script>
 
@@ -28,5 +27,7 @@
     </div>
   </div>
 
-  <Footer />
+  <div class="w-[90%]">
+    <Footer />
+  </div>
 </div>

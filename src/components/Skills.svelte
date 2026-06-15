@@ -1,6 +1,6 @@
 <script lang="ts">
-  let { title = "Skills" }: { title?: string } = $props();
   import skills from "@content/skills.json";
+  let { title = "Skills" }: { title?: string } = $props();
   const sections = ["frameworks", "programming", "tools"] as const;
   const icons = import.meta.glob("../icons/tech/*.svg", {
     query: "?raw",

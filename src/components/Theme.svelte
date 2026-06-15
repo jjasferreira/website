@@ -1,9 +1,9 @@
 <script lang="ts">
-  let { iconClass }: { iconClass?: string } = $props();
   import sun from "@icons/ui/sun.svg?raw";
   import moon from "@icons/ui/moon.svg?raw";
   import { dark, initializeTheme, toggleTheme } from "../theme.js";
   import { onMount } from "svelte";
+  let { iconClass }: { iconClass?: string } = $props();
 
   onMount(() => {
     initializeTheme();

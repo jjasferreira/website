@@ -16,7 +16,6 @@
   import experience from "@content/experience.json";
   import achievements from "@content/achievements.json";
 
-  import arrowleft from "@icons/ui/arrowleft.svg?raw";
   import house from "@icons/ui/house.svg?raw";
   import printer from "@icons/ui/printer.svg?raw";
   import codexml from "@icons/ui/codexml.svg?raw";
@@ -30,7 +29,7 @@
 
 <div class="min-h-screen p-5 bg-mist-50 dark:bg-mist-900">
   <div class="max-w-5xl mx-auto space-y-4">
-    <!-- Action Buttons -->
+    <!-- Buttons -->
     <div class="relative flex justify-center gap-4 print:hidden">
       <div class="absolute left-0">
         <Button

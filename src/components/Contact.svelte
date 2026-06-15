@@ -20,7 +20,7 @@
   <h2 class="pl-1.5 mb-2 text-xl font-semibold text-black dark:text-white">
     {title}
   </h2>
-  <div class="flex flex-col pt-0.75 pb-1.25">
+  <div class="flex flex-col pb-1.25">
     {#each Object.entries(contact) as [, item]}
       {@const icon = icons["../icons/" + item.icon]}
       <h4 class="text-sm font-medium text-mist-500">

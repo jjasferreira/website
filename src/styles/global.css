@@ -1,3 +1,7 @@
 @import "tailwindcss";
 
+@theme {
+  --breakpoint-xs: 32rem;
+}
+
 @custom-variant dark (&:where(.dark, .dark *));

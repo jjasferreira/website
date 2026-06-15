@@ -1,7 +1,7 @@
 <script lang="ts">
-  let { title = "Projects" }: { title?: string } = $props();
   import { contributions, personal } from "@content/projects.json";
   import skills from "@content/skills.json";
+  let { title = "Projects" }: { title?: string } = $props();
   const projects = {
     contributions: contributions,
     personal: personal,
