@@ -12,9 +12,9 @@
 
 <section
   id={title.toLowerCase()}
-  class="px-6 pt-4 pb-3 bg-white border-2 rounded-xl border-mist-200 dark:border-mist-800 dark:bg-mist-950"
+  class="px-5 py-3 bg-white border-2 rounded-2xl border-mist-200 dark:border-mist-800 dark:bg-mist-950"
 >
-  <h2 class="mb-2 text-xl font-semibold text-black dark:text-white">
+  <h2 class="mb-1 text-xl font-semibold text-black dark:text-white">
     {title}
   </h2>
   <div>
@@ -23,17 +23,18 @@
         style=" --color: {hist.color};
                         --lightcolor: color-mix({hist.color}, white 20%);
                         --darkcolor: color-mix(in srgb, {hist.color}, black 10%)"
-        class={`flex flex-col sm:flex-row sm:gap-3 ${
-          i === 0
-            ? "pt-1"
-            : "mt-2 border-t border-mist-200 dark:border-mist-800 pt-2"
-        }`}
       >
-        <div class="shrink-0 gap-3 flex">
+        <div
+          class={`flex gap-2.5 ${
+            i === 0
+              ? "pt-1"
+              : "mt-2 border-t border-mist-200 dark:border-mist-800 pt-2"
+          }`}
+        >
           {#if hist.logo}
             <a href={hist.logourl} target="_blank" rel="noopener noreferrer">
               <img
-                class="mb-1 shrink-0 h-12 min-w-12 max-w-12 rounded-lg object-contain transition hover:opacity-80 dark:bg-(--darkcolor)/90"
+                class="shrink-0 h-12 min-w-12 max-w-12 rounded-lg object-contain transition hover:opacity-80 dark:bg-(--darkcolor)/90"
                 src={$dark
                   ? "../images/dark/" + hist.logo
                   : "../images/light/" + hist.logo}
@@ -41,83 +42,59 @@
               />
             </a>
           {/if}
-          <div class="flex flex-col sm:hidden justify-center">
-            {#if hist.title}
-              <h3
-                class="text-base font-semibold text-black transition dark:text-white hover:opacity-80"
-              >
-                <a
-                  href={hist.titleurl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {hist.title}
-                </a>
-              </h3>
-            {/if}
-            {#if hist.subtitle}
-              <h4 class="text-sm font-medium text-mist-800 dark:text-mist-200">
-                <a
-                  href={hist.subtitleurl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="transition hover:opacity-80"
-                >
-                  {hist.subtitle}
-                </a>
-              </h4>
-            {/if}
+          <div class="min-w-0 grow">
+            <div
+              class="flex flex-col sm:flex-row sm:items-center sm:justify-between"
+            >
+              <div class="flex flex-col pt-px">
+                {#if hist.title}
+                  <h3
+                    class="text-base font-semibold text-black transition dark:text-white hover:opacity-80"
+                  >
+                    <a
+                      href={hist.titleurl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {hist.title}
+                    </a>
+                  </h3>
+                {/if}
+                {#if hist.subtitle}
+                  <h4
+                    class="text-sm font-medium text-mist-800 dark:text-mist-200"
+                  >
+                    <a
+                      href={hist.subtitleurl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="transition hover:opacity-80"
+                    >
+                      {hist.subtitle}
+                    </a>
+                  </h4>
+                {/if}
+              </div>
+              <div class="justify-center text-sm text-mist-500 sm:text-right">
+                {#if hist.time}
+                  <h5 class="sm:pt-1">
+                    {hist.time}
+                  </h5>
+                {/if}
+                {#if hist.location}
+                  <h5>{hist.location}</h5>
+                {/if}
+              </div>
+            </div>
           </div>
         </div>
-        <div class="min-w-0 grow">
-          <!-- Title, subtitle, time, location -->
-          <div
-            class="flex flex-col sm:flex-row sm:items-center sm:justify-between"
-          >
-            <div class="hidden sm:flex flex-col justify-center">
-              {#if hist.title}
-                <h3
-                  class="text-base font-semibold text-black transition dark:text-white hover:opacity-80"
-                >
-                  <a
-                    href={hist.titleurl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {hist.title}
-                  </a>
-                </h3>
-              {/if}
-              {#if hist.subtitle}
-                <h4
-                  class="text-sm font-medium text-mist-800 dark:text-mist-200"
-                >
-                  <a
-                    href={hist.subtitleurl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="transition hover:opacity-80"
-                  >
-                    {hist.subtitle}
-                  </a>
-                </h4>
-              {/if}
-            </div>
-            <div class="justify-center text-sm text-mist-500 sm:text-right">
-              {#if hist.time}
-                <h5 class="sm:pt-1">
-                  {hist.time}
-                </h5>
-              {/if}
-              {#if hist.location}
-                <h5>{hist.location}</h5>
-              {/if}
-            </div>
-          </div>
-          <!-- Heading -->
+        <div class="pl-7.25 xs:pl-14.5">
           {#if hist.heading}
             <h6
-              class="pt-0.5 pb-0.75 sm:py-0.75 text-xs font-medium text-mist-600 dark:text-mist-400"
+              class="pt-0.5 sm:pt-0 text-xs font-medium text-mist-600 dark:text-mist-400 {hist.concepts &&
+              hist.concepts.length > 0
+                ? 'pb-0.75'
+                : 'pb-0 pt-0.75'}"
             >
               {#if hist.headingurl}
                 <a
@@ -133,55 +110,58 @@
               {/if}
             </h6>
           {/if}
-          <!-- Concepts -->
+        </div>
+        <div class="xs:pl-14.5">
           {#if hist.concepts}
             <div class="flex flex-wrap gap-2 py-0.75">
               {#each hist.concepts as concept}
-                <span
-                  class="group relative inline-block rounded-full border border-(--darkcolor)/33 dark:border-(--lightcolor)/33 bg-(--lightcolor)/7.5 dark:bg-(--darkcolor)/10 text-(--darkcolor) dark:text-(--lightcolor) px-2 pt-0.5 pb-[3.5px] text-[11px] font-medium cursor-help"
+                <button
+                  type="button"
+                  class="group relative inline-block rounded-full border border-(--darkcolor)/33 dark:border-(--lightcolor)/33 bg-(--lightcolor)/7.5 dark:bg-(--darkcolor)/10 text-(--darkcolor) dark:text-(--lightcolor) px-2 pt-0.5 pb-[3.5px] text-[11px] font-medium cursor-help focus:outline-none text-left appearance-none"
                 >
                   {concepts[concept as keyof typeof concepts]?.name}
+
                   <span
-                    class="absolute bottom-full left-1/2 z-20 mb-2 hidden group-hover:block w-48 -translate-x-1/2 rounded bg-gray-900 px-2 py-1 text-center text-[10px] font-normal leading-tight text-white normal-case shadow-xl pointer-events-none whitespace-normal"
+                    class="absolute bottom-full left-1/2 z-20 mb-2 hidden group-hover:block group-focus:block w-48 -translate-x-1/2 rounded bg-gray-900 px-2 py-1 text-center text-[10px] font-normal leading-tight text-white normal-case shadow-xl pointer-events-none whitespace-normal"
                   >
                     <span
-                      class="absolute top-full left-1/2 -ml-1 border-4 border-transparent border-t-gray-900"
+                      class="absolute -ml-1 border-4 border-transparent top-full left-1/2 border-t-gray-900"
                     ></span>
 
                     {concepts[concept as keyof typeof concepts]?.ccs}
                   </span>
-                </span>
+                </button>
               {/each}
             </div>
           {/if}
-          <!-- Description -->
           {#if hist.description}
             <p class="py-0.75 text-xs text-mist-800 dark:text-mist-200">
               {hist.description}
             </p>
           {/if}
-          <!-- Media -->
           {#if hist.media}
-            <div class="flex flex-wrap gap-x-3 gap-y-1 py-0.75">
+            <div
+              class="flex flex-row flex-wrap items-center gap-x-3 gap-y-1 py-0.75 w-full"
+            >
               {#each hist.media as media}
                 {@const icon = icons["../icons/" + media.icon]}
                 {#if media.url}
                   <a
-                    href={"docs/" + media.url}
+                    href={media.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="inline-flex items-center gap-1 text-[11px] font-medium text-(--darkcolor) transition hover:opacity-80 dark:text-(--lightcolor)"
+                    class="flex items-center gap-1 text-[11px] font-medium text-(--darkcolor) dark:text-(--lightcolor) hover:opacity-90 hover:underline hover:-translate-y-px hover:translate-x-px"
                   >
-                    <div class="min-w-3 h-3 [&_svg]:h-full [&_svg]:w-full">
+                    <div class="w-3 h-3 shrink-0 [&_svg]:h-full [&_svg]:w-full">
                       {@html icon}
                     </div>
                     <span>{media.title}</span>
                   </a>
                 {:else}
                   <span
-                    class="inline-flex items-center gap-1 text-[11px] font-medium text-(--darkcolor) dark:text-(--lightcolor)"
+                    class="flex items-center gap-1 text-[11px] font-medium text-(--darkcolor) dark:text-(--lightcolor)"
                   >
-                    <div class="min-w-3 h-3 [&_svg]:h-full [&_svg]:w-full">
+                    <div class="w-3 h-3 shrink-0 [&_svg]:h-full [&_svg]:w-full">
                       {@html icon}
                     </div>
                     <span>{media.title}</span>

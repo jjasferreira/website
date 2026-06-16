@@ -15,6 +15,7 @@
   import education from "@content/education.json";
   import experience from "@content/experience.json";
   import achievements from "@content/achievements.json";
+  import profile from "@content/profile.json";
 
   import house from "@icons/ui/house.svg?raw";
   import printer from "@icons/ui/printer.svg?raw";
@@ -72,15 +73,15 @@
     <Profile />
 
     <!-- lg--- -->
-    <div class="hidden lg:block space-y-4">
-      <div class="grid gap-4 grid-cols-4">
-        <div class="space-y-4 col-span-1">
+    <div class="hidden space-y-4 lg:block">
+      <div class="grid grid-cols-4 gap-4">
+        <div class="col-span-1 space-y-4">
           <Contact {contact} />
           <Skills />
           <Projects />
           <Contact title="Profiles" contact={profiles} />
         </div>
-        <div class="space-y-4 col-span-3">
+        <div class="col-span-3 space-y-4">
           <History title="Experience" history={experience} />
           <History title="Education" history={education} />
           <History title="Achievements" history={achievements} />
@@ -91,7 +92,7 @@
     </div>
 
     <!-- md-lg -->
-    <div class="hidden md:block lg:hidden space-y-4">
+    <div class="hidden space-y-4 md:block lg:hidden">
       <div class="grid grid-cols-3 gap-4">
         <div class="space-y-4">
           <Contact {contact} />
@@ -110,7 +111,7 @@
     </div>
 
     <!-- sm-md -->
-    <div class="hidden sm:block md:hidden space-y-4">
+    <div class="hidden space-y-4 sm:block md:hidden">
       <div class="grid grid-cols-2 gap-4">
         <div class="space-y-4">
           <Contact contact={{ ...contact, ...profiles }} />
@@ -126,7 +127,7 @@
     </div>
 
     <!-- ---sm -->
-    <div class="block sm:hidden space-y-4">
+    <div class="block space-y-4 sm:hidden">
       <Contact {contact} />
       <Skills />
       <History title="Experience" history={experience} />
@@ -138,6 +139,6 @@
       <Contact title="Profiles" contact={profiles} />
     </div>
 
-    <Footer />
+    <Footer text={profile.fullname} />
   </div>
 </div>

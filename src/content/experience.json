@@ -50,12 +50,12 @@
       },
       {
         "title": "Slides",
-        "url": "first-order-linear-temporal-logic-for-testing-distributed-protocols-slides.pdf",
+        "url": "docs/first-order-linear-temporal-logic-for-testing-distributed-protocols-slides.pdf",
         "icon": "ui/presentation.svg"
       },
       {
         "title": "Application of ACTLChecker to the ICT Approval Protocol at IGFEJ as part of OptiGov",
-        "url": "application-of-actlchecker-to-the-ict-approval-protocol-at-igfej-as-part-of-optigov.pdf",
+        "url": "docs/application-of-actlchecker-to-the-ict-approval-protocol-at-igfej-as-part-of-optigov.pdf",
         "icon": "ui/filetext.svg"
       },
       {
@@ -83,7 +83,7 @@
     "media": [
       {
         "title": "Teaching Excellence Diploma 2024/2025",
-        "url": "https://www.youtube.com/live/psVG7Cm89Ps?si=Qr2covJLH60H5dPV&t=5648",
+        "url": "https://youtube.com/live/psVG7Cm89Ps?si=Qr2covJLH60H5dPV&t=5648",
         "icon": "ui/filebadge.svg"
       }
     ]

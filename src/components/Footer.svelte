@@ -1,14 +1,20 @@
 <script lang="ts">
-  import profile from "@content/profile.json";
+  let {
+    text,
+    href = "/",
+  }: {
+    text: string;
+    href?: string;
+  } = $props();
   const year = new Date().getFullYear();
 </script>
 
 <footer
   id="footer"
-  class="flex pt-3 mt-5 text-xs border-t border-mist-200 dark:border-mist-800 text-mist-500 justify-between print:hidden"
+  class="flex justify-between pt-3 mt-5 text-xs border-t border-mist-200 dark:border-mist-800 text-mist-500 print:hidden"
 >
-  <a href="/" class="hover:underline px-1">
-    {profile.fullname}
+  <a {href} class="px-1 hover:underline">
+    {text}
   </a>
   <span class="px-1">© {year}</span>
 </footer>

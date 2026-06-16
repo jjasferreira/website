@@ -4,16 +4,16 @@
 
 <section
   id="profile"
-  class="px-6 pt-3.5 pb-3 bg-white border-2 rounded-xl border-mist-200 dark:border-mist-800 dark:bg-mist-950"
+  class="px-5 py-3 bg-white border-2 rounded-2xl border-mist-200 dark:border-mist-800 dark:bg-mist-950"
 >
   <div
     class="flex flex-col sm:flex-row items-center sm:items-start gap-x-5 gap-y-1.75"
   >
-    <div class="w-28 overflow-hidden rounded-full mt-2">
+    <div class="mt-2 overflow-hidden rounded-full w-28">
       <img
         src={"../images/" + profile.avatar}
         alt={profile.name}
-        class="w-full h-full object-cover transition-transform duration-300 ease-in-out hover:scale-110"
+        class="object-cover w-full h-full transition-transform duration-300 ease-in-out hover:scale-110"
       />
     </div>
     <div class="flex-1">

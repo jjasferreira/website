@@ -15,7 +15,7 @@
   type="button"
   aria-label="Toggle theme"
   onclick={toggleTheme}
-  class="flex items-center border-2 rounded-full cursor-pointer h-10 w-15 bg-mist-200 border-mist-200 dark:border-mist-800 dark:bg-mist-800"
+  class="flex items-center h-10 border-2 rounded-full cursor-pointer w-15 bg-mist-200 border-mist-200 dark:border-mist-800 dark:bg-mist-800"
 >
   <span
     class={`flex h-full w-[36.8px] items-center justify-center bg-white dark:bg-mist-950 rounded-full duration-300 hover:opacity-80 text-mist-500 ${$dark ? "translate-x-[19.75px]" : "translate-x-0"}`}

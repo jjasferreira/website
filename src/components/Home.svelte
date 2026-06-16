@@ -3,17 +3,18 @@
   import Card from "@components/Card.svelte";
   import Button from "@components/Button.svelte";
   import Footer from "@components/Footer.svelte";
+
   import fileuser from "@icons/ui/fileuser.svg?raw";
 </script>
 
 <div
-  class="p-5 bg-mist-50 dark:bg-mist-900 flex flex-col items-center min-h-screen"
+  class="flex flex-col items-center min-h-screen p-5 bg-mist-50 dark:bg-mist-900"
 >
   <div class="mb-4">
     <Theme iconClass="p-px" />
   </div>
 
-  <div class="min-h-145 flex flex-col justify-center gap-4">
+  <div class="flex flex-col justify-center gap-4 min-h-145">
     <Card />
 
     <div class="flex flex-col items-center">
@@ -21,13 +22,18 @@
         id="resume"
         ariaLabel="View my resume"
         icon={fileuser}
+        iconClass="p-px"
         title="View my resume"
-        onclick={() => window.location.assign("/resume")}
+        onclick={() =>
+          window.location.assign(`${import.meta.env.BASE_URL}resume`)}
       />
     </div>
   </div>
 
   <div class="w-[90%]">
-    <Footer />
+    <Footer
+      text="Created by José João Ferreira"
+      href="https://github.com/jjasferreira"
+    />
   </div>
 </div>

@@ -17,12 +17,12 @@
     "media": [
       {
         "title": "Exploring Formal Verification for First-Order Linear Temporal Logic Modulo Theories",
-        "url": "exploring-formal-verification-for-first-order-linear-temporal-logic-modulo-theories.pdf",
+        "url": "docs/exploring-formal-verification-for-first-order-linear-temporal-logic-modulo-theories.pdf",
         "icon": "ui/filetext.svg"
       },
       {
         "title": "Slides",
-        "url": "exploring-formal-verification-for-first-order-linear-temporal-logic-modulo-theories-slides.pdf",
+        "url": "docs/exploring-formal-verification-for-first-order-linear-temporal-logic-modulo-theories-slides.pdf",
         "icon": "ui/presentation.svg"
       },
       {
@@ -32,27 +32,27 @@
       },
       {
         "title": "Extended Abstract",
-        "url": "specifying-and-testing-distributed-protocols-with-action-temporal-logic-extended-abstract.pdf",
+        "url": "docs/specifying-and-testing-distributed-protocols-with-action-temporal-logic-extended-abstract.pdf",
         "icon": "ui/filetext.svg"
       },
       {
         "title": "Slides",
-        "url": "specifying-and-testing-distributed-protocols-with-action-temporal-logic-slides.pdf",
+        "url": "docs/specifying-and-testing-distributed-protocols-with-action-temporal-logic-slides.pdf",
         "icon": "ui/presentation.svg"
       },
       {
         "title": "actl-checker",
-        "url": "https://github.svg.com/jjasferreira/actl-checker",
+        "url": "https://github.com/jjasferreira/actl-checker",
         "icon": "tech/github.svg"
       },
       {
         "title": "Academic Excellence Diploma 2024/2025",
-        "url": "https://www.youtube.com/live/psVG7Cm89Ps?si=6pn16C6b28JVali&t=2729",
+        "url": "https://youtube.com/live/psVG7Cm89Ps?si=6pn16C6b28JVali&t=2729",
         "icon": "ui/filebadge.svg"
       },
       {
         "title": "Master's Degree Certificate",
-        "url": "master-degree-certificate.pdf",
+        "url": "docs/master-degree-certificate.pdf",
         "icon": "ui/graduationcap.svg"
       }
     ]
@@ -75,22 +75,22 @@
     "media": [
       {
         "title": "Academic Merit Diploma 2020/2021",
-        "url": "academic-merit-diploma-2020-2021.pdf",
+        "url": "docs/academic-merit-diploma-2020-2021.pdf",
         "icon": "ui/filebadge.svg"
       },
       {
         "title": "Academic Merit Diploma 2021/2022",
-        "url": "academic-merit-diploma-2021-2022.pdf",
+        "url": "docs/academic-merit-diploma-2021-2022.pdf",
         "icon": "ui/filebadge.svg"
       },
       {
         "title": "Academic Merit Diploma 2022/2023",
-        "url": "academic-merit-diploma-2022-2023.pdf",
+        "url": "docs/academic-merit-diploma-2022-2023.pdf",
         "icon": "ui/filebadge.svg"
       },
       {
         "title": "Bachelor's Degree Certificate",
-        "url": "bachelor-degree-certificate.pdf",
+        "url": "docs/bachelor-degree-certificate.pdf",
         "icon": "ui/graduationcap.svg"
       }
     ]

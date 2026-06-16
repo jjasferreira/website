@@ -41,3 +41,11 @@ npm run preview
 * [Astro](https://astro.build/) for fast, static performance
 * [Svelte](https://svelte.dev/) for components and interactive elements
 * [Tailwind CSS](https://tailwindcss.com/) for styling
+
+---
+
+## 📄 License & Attribution
+
+This project is open-source and free to use! You are completely free to fork this repository, customize the data, and use it for your own personal portfolio or resume.
+
+All I ask is that you please keep the footer credit link intact on your live website to support my work. Thank you! ❤️
