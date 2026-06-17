@@ -38,7 +38,7 @@
                       href={volunteer.subtitleurl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      class="inline-block hover:opacity-90 hover:underline hover:-translate-y-px hover:translate-x-px"
+                      class="inline-block hover:opacity-90 underline-offset-[1.5px] hover:underline hover:-translate-y-px hover:translate-x-px"
                     >
                       {volunteer.subtitle}
                     </a>

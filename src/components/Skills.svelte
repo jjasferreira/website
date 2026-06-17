@@ -26,9 +26,11 @@
         href={concept.url}
         target="_blank"
         rel="noopener noreferrer"
-        class="hover:opacity-80"
+        class="hover:opacity-90"
       >
-        <p class="text-xs text-mist-800 dark:text-mist-200">
+        <p
+          class="underline-offset-[1.5px] hover:underline hover:-translate-y-px hover:translate-x-px text-xs text-mist-800 dark:text-mist-200"
+        >
           {concept.name}
         </p>
       </a>

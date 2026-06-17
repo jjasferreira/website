@@ -1,18 +1,18 @@
 {
   "email": {
-    "title": "jjasferreira@gmail.com",
-    "url": "mailto:jjasferreira@gmail.com",
+    "title": "me@jjasf.pt",
+    "url": "mailto:me@jjasf.pt",
     "icon": "ui/mail.svg"
+  },
+  "website": {
+    "title": "jjasf.pt",
+    "url": "https://jjasferreira.github.io",
+    "icon": "ui/globe.svg"
   },
   "location": {
     "title": "Lisbon, Portugal",
     "url": "https://google.com/search?q=Lisbon,+Portugal",
     "icon": "ui/mappin.svg"
-  },
-  "website": {
-    "title": "jjasferreira.github.io",
-    "url": "https://jjasferreira.github.io",
-    "icon": "ui/globe.svg"
   },
   "github": {
     "title": "jjasferreira",

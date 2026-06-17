@@ -38,18 +38,13 @@
             : 'border-t pt-2'}"
         >
           <div
-            class="hover:opacity-90 hover:-translate-y-px hover:translate-x-px"
+            class="group hover:opacity-90 underline-offset-[1.5px] hover:-translate-y-px hover:translate-x-px"
           >
-            <a
-              href={project.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              class=""
-            >
+            <a href={project.url} target="_blank" rel="noopener noreferrer">
               <div class="flex items-center justify-between">
                 {#if title}
                   <span
-                    class="inline-flex items-center gap-1.25 text-black dark:text-white"
+                    class="group-hover:underline inline-flex items-center gap-1.25 text-black dark:text-white"
                   >
                     <div class="w-4 h-4">
                       {@html icon}
@@ -60,7 +55,8 @@
                   </span>
                 {/if}
                 {#if project.time}
-                  <span class="text-[10.5px] text-mist-500">{project.time}</span
+                  <span class="text-[10.5px] text-mist-500 hover:no-underline"
+                    >{project.time}</span
                   >
                 {/if}
               </div>

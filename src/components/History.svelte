@@ -91,10 +91,10 @@
         <div class="pl-7.25 xs:pl-14.5">
           {#if hist.heading}
             <h6
-              class="pt-0.5 sm:pt-0 text-xs font-medium text-mist-600 dark:text-mist-400 {hist.concepts &&
+              class="text-xs font-medium text-mist-600 dark:text-mist-400 {hist.concepts &&
               hist.concepts.length > 0
-                ? 'pb-0.75'
-                : 'pb-0 pt-0.75'}"
+                ? 'pt-px pb-0.75'
+                : 'pt-0.5'}"
             >
               {#if hist.headingurl}
                 <a
@@ -150,7 +150,7 @@
                     href={media.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="flex items-center gap-1 text-[11px] font-medium text-(--darkcolor) dark:text-(--lightcolor) hover:opacity-90 hover:underline hover:-translate-y-px hover:translate-x-px"
+                    class="flex items-center gap-1 text-[11px] font-medium text-(--darkcolor) dark:text-(--lightcolor) hover:opacity-90 underline-offset-[1.5px] hover:underline hover:-translate-y-px hover:translate-x-px"
                   >
                     <div class="w-3 h-3 shrink-0 [&_svg]:h-full [&_svg]:w-full">
                       {@html icon}

@@ -6,7 +6,7 @@ export default defineConfig({
   build: {
     assets: 'assets' 
   },
-  site: 'https://jjasferreira.github.io',
+  site: 'https://jjasf.pt',
   integrations: [svelte()],
   vite: {
     plugins: [tailwindcss()],
