@@ -22,7 +22,7 @@
       },
       {
         "title": "ECAI Attendance Certificate",
-        "url": "docs/ecai-attendance-certificate.pdf",
+        "url": "../docs/ecai-attendance-certificate.pdf",
         "icon": "ui/graduationcap.svg"
       }
     ]
@@ -45,7 +45,7 @@
     "media": [
       {
         "title": "English Proficiency Certificate",
-        "url": "docs/english-proficiency-certificate.pdf",
+        "url": "../docs/english-proficiency-certificate.pdf",
         "icon": "ui/graduationcap.svg"
       }
     ]

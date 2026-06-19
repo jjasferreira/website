@@ -53,7 +53,7 @@
           titleClass="hidden lg:block"
           onclick={() =>
             window.open(
-              "https://github.com/jjasferreira/jjasferreira.github.io",
+              "https://github.com/jjasferreira/website",
               "_blank",
               "noopener,noreferrer",
             )}
@@ -82,9 +82,21 @@
           <Contact title="Profiles" contact={profiles} />
         </div>
         <div class="col-span-3 space-y-4">
-          <History title="Experience" history={experience} />
-          <History title="Education" history={education} />
-          <History title="Achievements" history={achievements} />
+          <History
+            title="Experience"
+            history={experience}
+            headingClass="sm:pl-14.5"
+          />
+          <History
+            title="Education"
+            history={education}
+            headingClass="pl-14.5"
+          />
+          <History
+            title="Achievements"
+            history={achievements}
+            headingClass="pl-14.5"
+          />
           <Portfolio />
           <Volunteering />
         </div>
@@ -103,9 +115,17 @@
           <Projects />
         </div>
       </div>
-      <History title="Experience" history={experience} />
-      <History title="Education" history={education} />
-      <History title="Achievements" history={achievements} />
+      <History
+        title="Experience"
+        history={experience}
+        headingClass="sm:pl-14.5"
+      />
+      <History title="Education" history={education} headingClass="pl-14.5" />
+      <History
+        title="Achievements"
+        history={achievements}
+        headingClass="pl-14.5"
+      />
       <Portfolio />
       <Volunteering />
     </div>
@@ -119,9 +139,17 @@
         </div>
         <Skills />
       </div>
-      <History title="Experience" history={experience} />
-      <History title="Education" history={education} />
-      <History title="Achievements" history={achievements} />
+      <History
+        title="Experience"
+        history={experience}
+        headingClass="sm:pl-14.5"
+      />
+      <History title="Education" history={education} headingClass="pl-14.5" />
+      <History
+        title="Achievements"
+        history={achievements}
+        headingClass="pl-14.5"
+      />
       <Portfolio />
       <Volunteering />
     </div>
@@ -130,10 +158,18 @@
     <div class="block space-y-4 sm:hidden">
       <Contact {contact} />
       <Skills />
-      <History title="Experience" history={experience} />
+      <History
+        title="Experience"
+        history={experience}
+        headingClass="sm:pl-14.5"
+      />
       <Projects />
-      <History title="Education" history={education} />
-      <History title="Achievements" history={achievements} />
+      <History title="Education" history={education} headingClass="pl-14.5" />
+      <History
+        title="Achievements"
+        history={achievements}
+        headingClass="pl-14.5"
+      />
       <Portfolio />
       <Volunteering />
       <Contact title="Profiles" contact={profiles} />

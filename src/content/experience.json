@@ -17,7 +17,7 @@
     "media": [
       {
         "title": "A Comparative Analysis of UNSAT Core Extraction Methodologies for Unweighted MaxSAT",
-        "url": "docs/a-comparative-analysis-of-unsat-core-extraction-methodologies-for-unweighted-maxsat.pdf",
+        "url": "../docs/a-comparative-analysis-of-unsat-core-extraction-methodologies-for-unweighted-maxsat.pdf",
         "icon": "ui/filetext.svg"
       },
       {
@@ -50,12 +50,12 @@
       },
       {
         "title": "Slides",
-        "url": "docs/first-order-linear-temporal-logic-for-testing-distributed-protocols-slides.pdf",
+        "url": "../docs/first-order-linear-temporal-logic-for-testing-distributed-protocols-slides.pdf",
         "icon": "ui/presentation.svg"
       },
       {
         "title": "Application of ACTLChecker to the ICT Approval Protocol at IGFEJ as part of OptiGov",
-        "url": "docs/application-of-actlchecker-to-the-ict-approval-protocol-at-igfej-as-part-of-optigov.pdf",
+        "url": "../docs/application-of-actlchecker-to-the-ict-approval-protocol-at-igfej-as-part-of-optigov.pdf",
         "icon": "ui/filetext.svg"
       },
       {

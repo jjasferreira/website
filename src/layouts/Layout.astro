@@ -3,11 +3,21 @@ import profile from '@content/profile.json';
 import '@styles/global.css';
 ---
 
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{profile.name}</title>
+    <meta name="title" content={profile.name} />
+    <meta name="description" content={profile.headline} />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.url.href} />
+    <meta property="og:title" content={profile.name} />
+    <meta property="og:description" content={profile.headline} />
+    <meta property="og:image" content={new URL(`/images/${profile.avatar}`, Astro.url)} />
 
     <!-- PostHog Analytics -->
     <script is:inline>

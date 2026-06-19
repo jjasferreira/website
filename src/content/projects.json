@@ -20,10 +20,10 @@
     }
   },
   "personal": {
-    "jjasferreira.github.io": {
+    "website": {
       "time": "05/26",
       "description": "My continuously in progress personal website",
-      "url": "https://github.com/jjasferreira/jjasferreira.github.io",
+      "url": "https://github.com/jjasferreira/website",
       "icon": "github.svg",
       "frameworks": [
         "astro",

@@ -1,6 +1,6 @@
-# jjasferreira.github.io
+# website
 
-My continuously in progress personal website
+My personal website, hosted at [jjasf.pt](https://jjasf.pt)
 
 ---
 

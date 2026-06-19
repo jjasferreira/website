@@ -17,12 +17,12 @@
     "media": [
       {
         "title": "Exploring Formal Verification for First-Order Linear Temporal Logic Modulo Theories",
-        "url": "docs/exploring-formal-verification-for-first-order-linear-temporal-logic-modulo-theories.pdf",
+        "url": "../docs/exploring-formal-verification-for-first-order-linear-temporal-logic-modulo-theories.pdf",
         "icon": "ui/filetext.svg"
       },
       {
         "title": "Slides",
-        "url": "docs/exploring-formal-verification-for-first-order-linear-temporal-logic-modulo-theories-slides.pdf",
+        "url": "../docs/exploring-formal-verification-for-first-order-linear-temporal-logic-modulo-theories-slides.pdf",
         "icon": "ui/presentation.svg"
       },
       {
@@ -32,12 +32,12 @@
       },
       {
         "title": "Extended Abstract",
-        "url": "docs/specifying-and-testing-distributed-protocols-with-action-temporal-logic-extended-abstract.pdf",
+        "url": "../docs/specifying-and-testing-distributed-protocols-with-action-temporal-logic-extended-abstract.pdf",
         "icon": "ui/filetext.svg"
       },
       {
         "title": "Slides",
-        "url": "docs/specifying-and-testing-distributed-protocols-with-action-temporal-logic-slides.pdf",
+        "url": "../docs/specifying-and-testing-distributed-protocols-with-action-temporal-logic-slides.pdf",
         "icon": "ui/presentation.svg"
       },
       {
@@ -52,7 +52,7 @@
       },
       {
         "title": "Master's Degree Certificate",
-        "url": "docs/master-degree-certificate.pdf",
+        "url": "../docs/master-degree-certificate.pdf",
         "icon": "ui/graduationcap.svg"
       }
     ]
@@ -75,22 +75,22 @@
     "media": [
       {
         "title": "Academic Merit Diploma 2020/2021",
-        "url": "docs/academic-merit-diploma-2020-2021.pdf",
+        "url": "../docs/academic-merit-diploma-2020-2021.pdf",
         "icon": "ui/filebadge.svg"
       },
       {
         "title": "Academic Merit Diploma 2021/2022",
-        "url": "docs/academic-merit-diploma-2021-2022.pdf",
+        "url": "../docs/academic-merit-diploma-2021-2022.pdf",
         "icon": "ui/filebadge.svg"
       },
       {
         "title": "Academic Merit Diploma 2022/2023",
-        "url": "docs/academic-merit-diploma-2022-2023.pdf",
+        "url": "../docs/academic-merit-diploma-2022-2023.pdf",
         "icon": "ui/filebadge.svg"
       },
       {
         "title": "Bachelor's Degree Certificate",
-        "url": "docs/bachelor-degree-certificate.pdf",
+        "url": "../docs/bachelor-degree-certificate.pdf",
         "icon": "ui/graduationcap.svg"
       }
     ]

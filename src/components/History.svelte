@@ -1,8 +1,11 @@
 <script lang="ts">
   import { concepts } from "@content/skills.json";
   import { dark } from "../theme.js";
-  let { title = "History", history }: { title?: string; history: any } =
-    $props();
+  let {
+    title = "History",
+    history,
+    headingClass,
+  }: { title?: string; history: any; headingClass?: string } = $props();
   const icons = import.meta.glob("../icons/**/*.svg", {
     query: "?raw",
     import: "default",
@@ -88,7 +91,7 @@
             </div>
           </div>
         </div>
-        <div class="pl-7.25 xs:pl-14.5">
+        <div class={headingClass}>
           {#if hist.heading}
             <h6
               class="text-xs font-medium text-mist-600 dark:text-mist-400 {hist.concepts &&
