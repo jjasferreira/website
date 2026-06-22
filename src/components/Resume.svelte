@@ -85,7 +85,7 @@
           <History
             title="Experience"
             history={experience}
-            headingClass="sm:pl-14.5"
+            headingClass="xs:pl-14.5"
           />
           <History
             title="Education"
@@ -118,7 +118,7 @@
       <History
         title="Experience"
         history={experience}
-        headingClass="sm:pl-14.5"
+        headingClass="xs:pl-14.5"
       />
       <History title="Education" history={education} headingClass="pl-14.5" />
       <History
@@ -142,7 +142,7 @@
       <History
         title="Experience"
         history={experience}
-        headingClass="sm:pl-14.5"
+        headingClass="xs:pl-14.5"
       />
       <History title="Education" history={education} headingClass="pl-14.5" />
       <History
@@ -161,7 +161,7 @@
       <History
         title="Experience"
         history={experience}
-        headingClass="sm:pl-14.5"
+        headingClass="xs:pl-14.5"
       />
       <Projects />
       <History title="Education" history={education} headingClass="pl-14.5" />
